@@ -696,7 +696,8 @@ body.dark #blog.home-section > .container,
   padding-top: 0.5rem;
 }
 
-/* Tighten Projects -> Awards transition */
+/* Tighten Publications/Projects -> Awards transition */
+#publications.home-section + #awards.home-section,
 #projects.home-section + #awards.home-section {
   padding-top: 0;
   margin-top: 0;

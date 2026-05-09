@@ -9,3 +9,4 @@ public/
 assets/jsconfig.json
 *.json
 .hugo_build.lock
+/*.txt
