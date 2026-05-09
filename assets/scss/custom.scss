@@ -764,6 +764,15 @@ body.dark #education.home-section,
   text-decoration: underline;
 }
 
+html.dark #education a,
+html.dark #experience a,
+body.dark #education a,
+body.dark #experience a,
+.dark #education a,
+.dark #experience a {
+  color: #bbdefb;
+}
+
 /*************************************************
  *  News List Font Size Override
  **************************************************/
