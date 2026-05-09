@@ -1,0 +1,162 @@
+{{/* Do not directly modify this file! */}}
+{{/* Instead, create a `layouts/partials/custom_js.html` file in your site and add your code to it. */}}
+
+{{/* This partial is included in `themes/academic/layouts/partials/site_js.html`. */}}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var blocks = document.querySelectorAll('.article-style pre');
+
+    blocks.forEach(function (pre) {
+      if (pre.querySelector('.code-copy-btn')) return;
+      var code = pre.querySelector('code');
+      if (!code) return;
+
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'code-copy-btn';
+      button.textContent = 'Copy';
+
+      button.addEventListener('click', function () {
+        var text = code.innerText || '';
+        navigator.clipboard.writeText(text).then(function () {
+          button.textContent = 'Copied';
+          setTimeout(function () {
+            button.textContent = 'Copy';
+          }, 1200);
+        }).catch(function () {
+          button.textContent = 'Failed';
+          setTimeout(function () {
+            button.textContent = 'Copy';
+          }, 1200);
+        });
+      });
+
+      pre.appendChild(button);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var newsHeading = document.querySelector('#news .section-heading h1');
+    if (!newsHeading || newsHeading.querySelector('.live-dot')) return;
+
+    var dot = document.createElement('span');
+    dot.className = 'live-dot';
+    dot.setAttribute('aria-hidden', 'true');
+    newsHeading.insertBefore(dot, newsHeading.firstChild);
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var courseNodes = document.querySelectorAll('.wg-about .ul-edu li .description .course');
+
+    courseNodes.forEach(function (node) {
+      if (!node || node.querySelector('.edu-year-muted')) return;
+
+      var text = (node.textContent || '').trim();
+      var idx = text.lastIndexOf(',');
+      if (idx < 0) return;
+
+      var degree = text.slice(0, idx).trim();
+      var year = text.slice(idx + 1).trim();
+      if (!degree || !year) return;
+
+      node.textContent = '';
+      node.appendChild(document.createTextNode(degree));
+
+      var yearEl = document.createElement('span');
+      yearEl.className = 'edu-year-muted';
+      yearEl.textContent = year;
+      node.appendChild(yearEl);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (document.getElementById('scroll-progress')) return;
+
+    var bar = document.createElement('div');
+    bar.id = 'scroll-progress';
+    bar.innerHTML = '<span class="scroll-progress__fill"></span>';
+
+    var navbar = document.getElementById('navbar-main');
+    if (navbar && navbar.parentNode) {
+      navbar.parentNode.insertBefore(bar, navbar.nextSibling);
+    } else {
+      document.body.insertBefore(bar, document.body.firstChild);
+    }
+
+    var fill = bar.querySelector('.scroll-progress__fill');
+
+    function updateBarOffset() {
+      if (!navbar) return;
+
+      var rect = navbar.getBoundingClientRect();
+      var bottom = Math.max(0, rect.bottom);
+      bar.style.top = bottom + 'px';
+    }
+
+    function updateProgress() {
+      var doc = document.documentElement;
+      var scrollTop = doc.scrollTop || document.body.scrollTop;
+      var scrollHeight = doc.scrollHeight - doc.clientHeight;
+      var ratio = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+      fill.style.width = (ratio * 100).toFixed(2) + '%';
+    }
+
+    updateBarOffset();
+    updateProgress();
+    window.addEventListener('load', updateBarOffset);
+    window.addEventListener('scroll', updateBarOffset, { passive: true });
+    window.addEventListener('resize', updateBarOffset);
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var abstracts = document.querySelectorAll('.pub .pub-abstract');
+    if (!abstracts.length) return;
+
+    abstracts.forEach(function (abstract) {
+      var heading = abstract.previousElementSibling;
+      if (heading && heading.tagName === 'H3') {
+        heading.remove();
+      }
+
+      abstract.remove();
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function addMoreButton(sectionId, href, label) {
+      var section = document.getElementById(sectionId);
+      if (!section) return;
+      if (section.querySelector('.home-more-btn')) return;
+
+      var target = section.querySelector('.section-content') || section.querySelector('.container');
+      if (!target) return;
+
+      var wrap = document.createElement('div');
+      wrap.className = 'home-more-wrap';
+
+      var link = document.createElement('a');
+      link.className = 'btn btn-outline-primary btn-sm home-more-btn';
+      link.href = href;
+      link.textContent = label;
+
+      wrap.appendChild(link);
+      target.appendChild(wrap);
+    }
+
+    addMoreButton('projects', '/projects/', 'More Projects');
+    addMoreButton('blog', '/blog/', 'More Posts');
+  });
+</script>

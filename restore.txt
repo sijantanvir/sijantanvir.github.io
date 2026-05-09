@@ -1,0 +1,4 @@
+  I disabled the homepage sections in content/home/blog.md (/G:/my-cv-site/Sample/my-site/content/home/blog.md) and
+  content/home/projects.md (/G:/my-cv-site/Sample/my-site/content/home/projects.md) by setting active = false, and I
+  commented out their navbar entries in config/_default/menus.toml (/G:/my-cv-site/Sample/my-site/config/_default/
+  menus.toml) so they’re easy to restore later.

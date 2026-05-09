@@ -1,0 +1,5 @@
+[pub_conf]
+other = "Conference"
+
+[pub_preprint]
+other = "Preprint"

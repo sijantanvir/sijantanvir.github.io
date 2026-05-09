@@ -1,0 +1,1130 @@
+/*************************************************
+ *  Toolbar Buttons
+ **************************************************/  
+  
+.btn-toolbar {
+  justify-content: center;
+}
+
+/*************************************************
+ *  Code Blocks (Monokai Pro Style + Copy Button)
+ **************************************************/
+
+.article-style pre,
+.article-style pre code.hljs {
+  background: #2d2a2e !important;
+  color: #fcfcfa !important;
+}
+
+.article-style pre {
+  border: 1px solid #403e41;
+  border-radius: 10px;
+  position: relative;
+  padding: 1rem 1.1rem;
+}
+
+.article-style code {
+  font-family: "Fira Code", "JetBrains Mono", "Roboto Mono", monospace;
+}
+
+.article-style .hljs-comment,
+.article-style .hljs-quote {
+  color: #727072;
+}
+
+.article-style .hljs-keyword,
+.article-style .hljs-selector-tag,
+.article-style .hljs-literal,
+.article-style .hljs-title,
+.article-style .hljs-section,
+.article-style .hljs-type,
+.article-style .hljs-name {
+  color: #ff6188;
+}
+
+.article-style .hljs-string,
+.article-style .hljs-doctag,
+.article-style .hljs-regexp {
+  color: #ffd866;
+}
+
+.article-style .hljs-number,
+.article-style .hljs-symbol,
+.article-style .hljs-bullet,
+.article-style .hljs-link {
+  color: #ab9df2;
+}
+
+.article-style .hljs-variable,
+.article-style .hljs-template-variable,
+.article-style .hljs-attribute {
+  color: #78dce8;
+}
+
+.article-style .hljs-function .hljs-title,
+.article-style .hljs-title.function_ {
+  color: #a9dc76;
+}
+
+.article-style .code-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: 1px solid #5b595c;
+  background: #403e41;
+  color: #fcfcfa;
+  border-radius: 6px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-2px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.article-style pre:hover .code-copy-btn,
+.article-style pre:focus-within .code-copy-btn {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.article-style .code-copy-btn:hover {
+  background: #5b595c;
+}
+/*************************************************
+ *  Home About Education Logos (2-column layout)
+ **************************************************/
+
+.wg-about .ul-edu.fa-ul {
+  margin-left: 0;
+}
+
+.wg-about .ul-edu li {
+  display: grid;
+  grid-template-columns: clamp(2rem, 5vw, 2.75rem) minmax(0, 1fr);
+  column-gap: 0.75rem;
+  align-items: start;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.wg-about .ul-edu li i.fa-li,
+.wg-about .ul-edu li i.fa-graduation-cap {
+  display: none;
+}
+
+.wg-about .ul-edu li::before {
+  content: "";
+  width: clamp(1.7rem, 4vw, 2.4rem);
+  height: clamp(1.7rem, 4vw, 2.4rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 0.1rem;
+}
+
+.wg-about .ul-edu li:nth-child(1)::before {
+  background-image: url('/images/education/urlogo.png');
+}
+
+.wg-about .ul-edu li:nth-child(2)::before {
+  background-image: url('/images/education/utlogo.png');
+}
+
+.wg-about .ul-edu li .description {
+  min-width: 0;
+}
+
+/*************************************************
+ *  Home About Education Muted Text
+ **************************************************/
+
+.wg-about .ul-edu li .description .course {
+  color: #6c757d;
+}
+
+/*************************************************
+ *  Home About Education Year Line
+ **************************************************/
+
+.wg-about .ul-edu li .description .course .edu-year-muted {
+  display: block;
+  margin-top: 0.1rem;
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 0.9em;
+}.wg-about .ul-edu li .description .course {
+  color: var(--color-text);
+}
+
+/*************************************************
+ *  Home About Education Logo Size Tuning
+ **************************************************/
+
+.wg-about .ul-edu li {
+  grid-template-columns: clamp(2.4rem, 7vw, 3.4rem) minmax(0, 1fr);
+}
+
+.wg-about .ul-edu li::before {
+  width: clamp(2.2rem, 6vw, 3rem);
+  height: clamp(2.2rem, 6vw, 3rem);
+}
+
+@media (max-width: 575.98px) {
+  .wg-about .ul-edu li {
+    grid-template-columns: clamp(2.6rem, 12vw, 3.2rem) minmax(0, 1fr);
+    column-gap: 0.6rem;
+  }
+
+  .wg-about .ul-edu li::before {
+    width: clamp(2.4rem, 11vw, 3rem);
+    height: clamp(2.4rem, 11vw, 3rem);
+  }
+}
+
+
+
+
+/*************************************************
+ *  Navbar Brand Hidden
+ **************************************************/
+
+#navbar-main .navbar-brand,
+#navbar-main .navbar-brand-mobile-wrapper {
+  display: none !important;
+}
+
+/*************************************************
+ *  Navbar Menu Spacing (custom)
+ **************************************************/
+
+#navbar-main .navbar-nav .nav-item {
+  margin: 0 0.2rem;
+}
+
+#navbar-main .navbar-nav .nav-item .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 991.98px) {
+  #navbar-main .navbar-nav .nav-item {
+    margin: 0;
+  }
+
+  #navbar-main .navbar-nav .nav-item .nav-link {
+    padding: 0.45rem 0.6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #navbar-main #navbar-content .navbar-nav {
+    column-gap: 0.3rem;
+  }
+
+  #navbar-main #navbar-content .navbar-nav > .nav-item {
+    margin: 0;
+  }
+
+  #navbar-main #navbar-content .navbar-nav > .nav-item:first-child {
+    margin-right: 1rem;
+  }
+
+  #navbar-main #navbar-content .navbar-nav > .nav-item .nav-link {
+    padding-left: 0.72rem;
+    padding-right: 0.72rem;
+  }
+}
+
+/*************************************************
+ *  Navbar Width (reference-like)
+ **************************************************/
+
+#navbar-main .container-xl {
+  max-width: 1280px;
+}
+
+/*************************************************
+ *  About Profile Scale (reference-like)
+ **************************************************/
+
+.wg-about #profile {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wg-about #profile .avatar {
+  width: clamp(155px, 20vw, 210px);
+  height: auto;
+}
+
+.wg-about #profile .portrait-title h2 {
+  font-size: clamp(1.35rem, 1.7vw, 1.6rem);
+  margin-top: 0.7rem;
+}
+
+.wg-about #profile .portrait-title h3 {
+  font-size: clamp(0.9rem, 1.15vw, 1rem);
+  line-height: 1.35;
+}
+
+.wg-about #profile .network-icon .big-icon {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 575.98px) {
+  .wg-about #profile {
+    max-width: 220px;
+  }
+
+  .wg-about #profile .avatar {
+    width: clamp(145px, 42vw, 185px);
+  }
+}
+
+/*************************************************
+ *  Heading Scale Tuning
+ **************************************************/
+
+h1,
+h1.article-title,
+.home-section .section-heading h1,
+.wg-about h1 {
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  line-height: 1.2;
+}
+
+h2,
+.home-section .section-heading h2,
+.wg-about h2 {
+  font-size: clamp(1.15rem, 1.6vw, 1.45rem);
+  line-height: 1.3;
+}
+
+/*************************************************
+ *  List Thumbnail Fit
+ **************************************************/
+
+.media.stream-item .ml-3 img {
+  width: clamp(130px, 16vw, 160px);
+  height: clamp(90px, 11vw, 110px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+}
+
+@media (max-width: 575.98px) {
+  .media.stream-item .ml-3 img {
+    width: 110px;
+    height: 78px;
+  }
+}
+
+/*************************************************
+ *  List Card Text Balance
+ **************************************************/
+
+.media.stream-item {
+  align-items: stretch;
+}
+
+.media.stream-item .media-body {
+  min-height: clamp(90px, 11vw, 110px);
+}
+
+.media.stream-item .article-title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.media.stream-item .summary-link .article-style {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 575.98px) {
+  .media.stream-item .media-body {
+    min-height: 78px;
+  }
+
+  .media.stream-item .summary-link .article-style {
+    -webkit-line-clamp: 2;
+  }
+}
+
+/*************************************************
+ *  Project Blog TOC Layout
+ **************************************************/
+
+.article-project-blog .article-style .toc-inpage {
+  display: none;
+}
+
+/*************************************************
+ *  Project Blog Content Width (Large Screens)
+ **************************************************/
+
+@media (min-width: 1200px) {
+  .article-project-blog .docs-content .article-container {
+    width: 100%;
+    max-width: 1120px;
+  }
+}
+.btn.btn-outline-primary.btn-page-header[href*="arxiv.org/abs"] {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.btn.btn-outline-primary.btn-page-header[href*="arxiv.org/abs"]:hover,
+.btn.btn-outline-primary.btn-page-header[href*="arxiv.org/abs"]:focus {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/*************************************************
+ *  News Section Typography (Slightly Smaller)
+ **************************************************/
+
+#news .section-heading h1 {
+  font-size: clamp(1.35rem, 1.85vw, 1.7rem);
+}
+
+#news .section-heading h1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+#news .section-heading h1 .live-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #ff3b30;
+  box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.45);
+  animation: live-dot-pulse 1.8s infinite;
+  flex: 0 0 auto;
+}
+
+@keyframes live-dot-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 59, 48, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
+  }
+}
+
+#news .section-heading p {
+  font-size: 0.95rem;
+}
+
+#news .wg-blank .section-content,
+#news .wg-blank .section-content p,
+#news .wg-blank .section-content li {
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+#news ul,
+#news ul li,
+#news ul li p {
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+/*************************************************
+ *  News & Awards Bullet Styling
+ **************************************************/
+
+#news .col-12.col-lg-8 > ul,
+#news .section-content > ul,
+#news .section-content .article-style > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#news .col-12.col-lg-8 > ul::before,
+#news .section-content > ul::before,
+#news .section-content .article-style > ul::before {
+  content: none;
+}
+
+#news .col-12.col-lg-8 > ul > li,
+#news .section-content > ul > li,
+#news .section-content .article-style > ul > li {
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+}
+
+#news .col-12.col-lg-8 > ul > li::before,
+#news .section-content > ul > li::before,
+#news .section-content .article-style > ul > li::before {
+  content: none;
+}
+
+#news .col-12.col-lg-8 > ul > li > ul,
+#news .section-content > ul > li > ul,
+#news .section-content .article-style > ul > li > ul {
+  list-style: none;
+  margin-top: 0.35rem;
+  padding-left: 1.25rem;
+}
+
+#news .col-12.col-lg-8 > ul > li > p,
+#news .section-content > ul > li > p,
+#news .section-content .article-style > ul > li > p {
+  margin-bottom: 0.15rem;
+}
+
+#news .col-12.col-lg-8 > ul > li > ul > li,
+#news .section-content > ul > li > ul > li,
+#news .section-content .article-style > ul > li > ul > li {
+  padding-left: 0;
+  margin-bottom: 0.35rem;
+}
+
+#news .col-12.col-lg-8 > ul > li > ul > li::before,
+#news .section-content > ul > li > ul > li::before,
+#news .section-content .article-style > ul > li > ul > li::before {
+  content: none;
+}
+
+/*************************************************
+ *  Blog & Publication Body Font (Source Serif Pro)
+ **************************************************/
+
+.page-post .article-style,
+.page-publication .article-style {
+  font-family: "Source Serif Pro", "Source Serif 4", Georgia, serif;
+}
+
+/*************************************************
+ *  Force Inter as Global Font
+ **************************************************/
+
+:root {
+  --font-body: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-nav: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --section-divider-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+#navbar-main,
+#navbar-main .navbar-nav .nav-link {
+  font-family: var(--font-nav);
+}
+
+/*************************************************
+ *  Home Page Global Font Size (Slight Reduction)
+ **************************************************/
+
+.home-section {
+  font-size: 0.95rem;
+}
+
+.home-section .section-heading h1 {
+  font-size: clamp(1.3rem, 1.8vw, 1.7rem);
+}
+
+/*************************************************
+ *  Section Subheading Size (Reduced)
+ **************************************************/
+
+.section-subheading {
+  font-size: 1rem;
+}
+
+
+.smallcaps {
+  font-variant: small-caps;
+  letter-spacing: 0.05em; /* optional, improves readability */
+}
+
+/*************************************************
+ *  Scroll Progress Bar (Blog)
+ **************************************************/
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1031;
+  height: 3px;
+  width: 100%;
+  background: transparent;
+}
+
+#scroll-progress .scroll-progress__fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #ff8a00 0%, #ff3d00 50%, #ff0066 100%);
+  transition: width 0.08s linear;
+}
+
+html.dark #scroll-progress .scroll-progress__fill {
+  background: linear-gradient(90deg, #00d4ff 0%, #5b7cfa 50%, #b14cff 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #scroll-progress .scroll-progress__fill {
+    transition: none;
+  }
+}
+
+/*************************************************
+ *  Contact Icon Row
+ **************************************************/
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.contact-icon i {
+  font-size: 1.1rem;
+}
+
+.contact-icon:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.contact-icon--text {
+  gap: 0.5rem;
+  padding: 0 0.9rem;
+  width: auto;
+}
+
+.contact-icon__label {
+  font-size: 0.95rem;
+}
+
+html.dark .contact-icon {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+html.dark .contact-icon:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/*************************************************
+ *  News Section Merge with First Section
+ **************************************************/
+
+#news.home-section {
+  padding-top: 1.4rem;
+  margin-top: 0;
+}
+
+#news.home-section {
+  padding-bottom: 1.4rem;
+}
+
+#news.home-section .section-heading {
+  margin-top: 0;
+}
+
+#bio.home-section {
+  padding-bottom: 0.5rem;
+}
+
+/* Reduce spacing after News and Blog sections */
+#news.home-section + .home-section,
+#blog.home-section + .home-section {
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+/* Add inner spacing for News and Blog text content */
+.home-section > .container {
+  margin-top: 1.25rem;
+}
+
+#news.home-section > .container {
+  margin-top: 0;
+}
+
+html.dark #blog.home-section > .container,
+body.dark #blog.home-section > .container,
+.dark #blog.home-section > .container {
+  margin-top: 0;
+}
+
+/* Tighten Publications -> Blog transition */
+#publications.home-section + #blog.home-section {
+  margin-top: 0;
+  padding-top: 0.5rem;
+}
+
+/* Tighten Projects -> Awards transition */
+#projects.home-section + #awards.home-section {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Slightly reduce Education section footprint */
+#education.home-section {
+  padding-top: 1.1rem;
+  padding-bottom: 0.8rem;
+}
+
+#bio.home-section + #education.home-section {
+  padding-top: 0.35rem;
+  margin-top: 0;
+}
+
+/* Keep Education and Experience timelines visually continuous */
+#education.home-section + #experience.home-section {
+  border-top: 1px dashed var(--section-divider-color);
+}
+
+body:not(.dark) #education.home-section + #experience.home-section,
+html:not(.dark) body:not(.dark) #education.home-section + #experience.home-section {
+  padding-top: 0.35rem;
+  margin-top: 0;
+}
+
+/*************************************************
+ *  Section Divider (Dashed)
+ **************************************************/
+
+.home-section + .home-section {
+  border-top: 1px dashed var(--section-divider-color);
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+html.dark .home-section + .home-section,
+body.dark .home-section + .home-section,
+.dark .home-section + .home-section {
+  --section-divider-color: rgba(255, 255, 255, 0.24);
+}
+
+html.dark #bio.home-section + .home-section,
+html.dark #education.home-section,
+body.dark #bio.home-section + .home-section,
+body.dark #education.home-section,
+.dark #bio.home-section + .home-section,
+.dark #education.home-section {
+  border-top-color: var(--section-divider-color);
+}
+
+/*************************************************
+ *  Section Heading Links (No Link Styling)
+ **************************************************/
+
+.home-section .section-heading a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-section .section-heading a:hover,
+.home-section .section-heading a:focus {
+  text-decoration: underline;
+}
+
+/*************************************************
+ *  News List Font Size Override
+ **************************************************/
+
+#news .section-content ul,
+#news .section-content ul li {
+  font-size: 0.85rem;
+}
+
+/*************************************************
+ *  Publication Tags (Compact)
+ **************************************************/
+
+#publications .article-tags {
+  margin-top: 0.35rem;
+}
+
+#publications .article-tags .badge {
+  padding: 0.2rem 0.45rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/*************************************************
+ *  Tag Highlight: Under Review
+ **************************************************/
+
+.article-tags .tag-under-review {
+  background: #d7263d;
+  color: #fff;
+  border-color: transparent;
+}
+
+/*************************************************
+ *  Publication List Tags (Compact)
+ **************************************************/
+
+.pub-list-item .article-tags {
+  margin-top: 0.35rem;
+}
+
+.pub-list-item .article-tags .badge {
+  padding: 0.2rem 0.45rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/*************************************************
+ *  Publication Venue Color
+ **************************************************/
+
+.pub-list-item .pub-venue,
+.pub-list-item .pub-venue em {
+  color: inherit;
+}
+
+.pub-card-venue,
+.pub-card-summary {
+  display: none;
+}
+
+/*************************************************
+ *  Homepage Publication Venue Badge
+ **************************************************/
+
+/*************************************************
+ *  Homepage Publications Citation Cards
+ **************************************************/
+
+#publications.home-publications-cards .pub-list-item-card {
+  position: relative;
+  margin-bottom: 1rem !important;
+  padding: 2.2rem 1.1rem 1rem 1.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+}
+
+#publications.home-publications-cards .pub-card-venue,
+#publications.home-publications-cards .pub-card-venue em {
+  position: absolute;
+  top: 0.7rem;
+  left: 1rem;
+  display: inline-block;
+  margin: 0;
+  padding: 0.18rem 0.4rem;
+  border-radius: 0.125rem;
+  background-color: #dc3545;
+  color: #fff !important;
+  font-size: 0.72rem;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-transform: none;
+  letter-spacing: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  font-style: normal;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-icon {
+  margin-top: 0.05rem;
+}
+
+#publications.home-publications-cards .pub-list-item-card .li-cite-author,
+#publications.home-publications-cards .pub-list-item-card .article-metadata {
+  line-height: 1.6;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-summary {
+  display: -webkit-box;
+  margin-top: 0.55rem;
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+  color: #4b5563;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  text-align: justify;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-summary p {
+  margin-bottom: 0;
+}
+
+#publications.home-publications-cards .pub-list-item-card .btn-links {
+  margin-top: 0.6rem;
+}
+
+#publications.home-publications-cards .pub-list-item-card .btn-links .btn {
+  border-radius: 999px;
+  padding: 0.32rem 0.72rem;
+  font-size: 0.76rem;
+}
+
+#publications.home-publications-cards .pub-list-item-card .article-tags {
+  margin-top: 0.45rem;
+}
+
+#publications.home-publications-cards .pub-list-item-card .article-tags .badge {
+  padding: 0.2rem 0.45rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+html.dark #publications.home-publications-cards .pub-list-item-card,
+body.dark #publications.home-publications-cards .pub-list-item-card,
+.dark #publications.home-publications-cards .pub-list-item-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.92);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+html.dark #publications.home-publications-cards .pub-card-venue,
+html.dark #publications.home-publications-cards .pub-card-venue em,
+body.dark #publications.home-publications-cards .pub-card-venue,
+body.dark #publications.home-publications-cards .pub-card-venue em,
+.dark #publications.home-publications-cards .pub-card-venue,
+.dark #publications.home-publications-cards .pub-card-venue em {
+  color: #fff !important;
+}
+
+html.dark #publications.home-publications-cards .pub-list-item-card .pub-card-summary,
+body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-summary,
+.dark #publications.home-publications-cards .pub-list-item-card .pub-card-summary {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/*************************************************
+ *  Education Title Color (No Muted)
+ **************************************************/
+
+.experience .exp-title {
+  color: inherit !important;
+}
+
+/*************************************************
+ *  Education Timeline Dots
+ **************************************************/
+
+.experience .badge.badge-pill.border,
+#education .badge.badge-pill.border {
+  background: transparent;
+  border: 2px solid #fff !important;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+#education .row.experience:first-of-type .badge.badge-pill.border,
+.experience .badge.badge-pill.border.exp-fill {
+  background: var(--primary);
+  border: 2px solid #fff !important;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.experience .col-auto .border-right {
+  border-right-color: var(--primary) !important;
+}
+
+
+/*************************************************
+ *  Awards Section Formatting
+ **************************************************/
+
+#awards .col-12.col-lg-8 > ul,
+#awards .section-content > ul,
+#awards .section-content .article-style > ul {
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
+  margin-left: 0;
+}
+
+#awards .col-12.col-lg-8 > ul::before,
+#awards .section-content > ul::before,
+#awards .section-content .article-style > ul::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary);
+}
+
+#awards .col-12.col-lg-8 > ul > li,
+#awards .section-content > ul > li,
+#awards .section-content .article-style > ul > li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.75rem;
+  border-bottom: none !important;
+}
+
+#awards .col-12.col-lg-8 > ul > li::before,
+#awards .section-content > ul > li::before,
+#awards .section-content .article-style > ul > li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0.95em;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--primary);
+  z-index: 1;
+}
+
+#awards .col-12.col-lg-8 > ul > li > p,
+#awards .section-content > ul > li > p,
+#awards .section-content .article-style > ul > li > p {
+  margin-bottom: 0.15rem;
+}
+
+#awards .col-12.col-lg-8 > ul > li > ul,
+#awards .section-content > ul > li > ul,
+#awards .section-content .article-style > ul > li > ul {
+  list-style: none;
+  position: relative;
+  margin-top: 0.35rem;
+  padding-left: 28px;
+}
+
+#awards .col-12.col-lg-8 > ul > li > ul::before,
+#awards .section-content > ul > li > ul::before,
+#awards .section-content .article-style > ul > li > ul::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary);
+}
+
+#awards .col-12.col-lg-8 > ul > li > ul > li,
+#awards .section-content > ul > li > ul > li,
+#awards .section-content .article-style > ul > li > ul > li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 0.35rem;
+  border-bottom: none !important;
+  text-decoration: none;
+}
+
+#awards .col-12.col-lg-8 > ul > li > ul > li::before,
+#awards .section-content > ul > li > ul > li::before,
+#awards .section-content .article-style > ul > li > ul > li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0.95em;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--primary);
+  z-index: 1;
+}
+
+#awards strong {
+  font-weight: 600;
+}
+
+#awards a {
+  text-decoration: none;
+}
+
+#awards a:hover,
+#awards a:focus {
+  text-decoration: underline;
+}
+
+#awards ul ul a,
+#awards ul ul a:hover,
+#awards ul ul a:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+html.dark #awards .section-content > ul > li,
+html.dark #awards .section-content > ul > li > ul > li {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+html.dark #awards .section-content > ul,
+html.dark #awards .section-content > ul > li > ul,
+body.dark #awards .section-content > ul,
+body.dark #awards .section-content > ul > li > ul,
+.dark #awards .section-content > ul,
+.dark #awards .section-content > ul > li > ul {
+  border-left-color: #1565c0;
+}
+
+:root {
+  --news-border: #4779c4;
+}
+
+/*************************************************
+ *  Home Page "More" Buttons (Projects/Blog)
+ **************************************************/
+
+.home-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.9rem;
+}
+
+.home-more-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+}

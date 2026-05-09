@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="home-section wg-portfolio">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="section-heading col-12 mb-3 text-center">
+        <h1 class="mb-0">{{ .Title }}</h1>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="row js-layout-row project-showcase">
+          {{ $pages := sort .RegularPages "Date" "desc" }}
+          {{ $paginator := .Paginate $pages 10 }}
+          {{ range $idx, $item := $paginator.Pages }}
+            {{ $link := $item.RelPermalink }}
+            {{ $target := "" }}
+            {{ if $item.Params.external_link }}
+              {{ $link = $item.Params.external_link }}
+              {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+            {{ end }}
+            {{ partial "portfolio_li_showcase" (dict "widget" (dict "Params" (dict "design" (dict "flip_alt_rows" true))) "index" $idx "item" $item "link" $link "target" $target) }}
+          {{ end }}
+        </div>
+        {{ partial "pagination" . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

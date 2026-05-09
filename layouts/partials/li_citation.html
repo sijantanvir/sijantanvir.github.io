@@ -1,0 +1,81 @@
+{{ $has_attachments := partial "functions/has_attachments" . }}
+{{ $title_link := .RelPermalink }}
+{{ $title_target := "" }}
+{{ if .Params.url_pdf }}
+  {{ $title_link = .Params.url_pdf }}
+  {{ $title_target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+{{ $venue_short := "" }}
+{{ if .Params.venue }}
+  {{ $venue_short = .Params.venue | markdownify }}
+{{ else if .Params.publication_short }}
+  {{ $venue_short = .Params.publication_short | markdownify }}
+{{ else if .Params.publication }}
+  {{ $venue_short = .Params.publication | markdownify }}
+{{ end }}
+{{ $card_summary := "" }}
+{{ if .Params.summary }}
+  {{ $card_summary = .Params.summary | markdownify | emojify }}
+{{ else if .Params.abstract }}
+  {{ $card_summary = .Params.abstract | markdownify | emojify }}
+{{ else if .Summary }}
+  {{ $card_summary = .Summary }}
+{{ end }}
+
+<div class="pub-list-item{{ if eq .Type "publication" }} pub-list-item-card{{ end }}" style="margin-bottom: 1rem">
+  {{ if $venue_short }}
+  <div class="pub-card-venue">{{ $venue_short }}</div>
+  {{ end }}
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  {{/* APA Style */}}
+  {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
+
+  <span class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" . }}
+  </span>
+  ({{- .Date.Format "2006" -}}).
+  <a href="{{ $title_link }}" {{ $title_target | safeHTMLAttr }}>{{ .Title }}</a>.
+  {{ if .Params.publication_short }}
+  <span class="pub-venue">{{- .Params.publication_short | markdownify -}}</span>.
+  {{ else if .Params.publication }}
+  <span class="pub-venue">{{- .Params.publication | markdownify -}}</span>.
+  {{ end }}
+  {{ with $card_summary }}
+  <div class="pub-card-summary">{{ . }}</div>
+  {{ end }}
+  <div class="btn-links">
+    {{ partial "page_links" (dict "page" . "is_list" 1) }}
+  </div>
+
+  {{ if .Param "tags" }}
+  {{ partial "tags" . }}
+  {{ end }}
+
+  {{/* MLA Style */}}
+  {{ else }}
+
+  <span class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" . }}.
+  </span>
+  <a href="{{ $title_link }}" {{ $title_target | safeHTMLAttr }}>{{ .Title }}</a>.
+  {{ if .Params.publication_short }}
+  <span class="pub-venue">{{- .Params.publication_short | markdownify -}}</span>,
+  {{ else if .Params.publication }}
+  <span class="pub-venue">{{- .Params.publication | markdownify -}}</span>,
+  {{ end }}
+  {{- .Date.Format "2006" -}}.
+  {{ with $card_summary }}
+  <div class="pub-card-summary">{{ . }}</div>
+  {{ end }}
+
+  <div class="btn-links">
+    {{ partial "page_links" (dict "page" . "is_list" 1) }}
+  </div>
+
+  {{ if .Param "tags" }}
+  {{ partial "tags" . }}
+  {{ end }}
+
+  {{ end }}
+</div>

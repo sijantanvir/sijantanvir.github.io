@@ -1,0 +1,2 @@
+PS D:\GitHub\starter-academic> hugo version
+hugo v0.110.0-e32a493b7826d02763c3b79623952e625402b168+extended windows/amd64 BuildDate=2023-01-17T12:16:09Z VendorInfo=gohugoio

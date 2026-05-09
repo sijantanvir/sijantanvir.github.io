@@ -1,0 +1,71 @@
+{{ $page := .page | default . }}
+{{ $show_doi := true }}
+{{ if and (eq $page.Type "publication") $page.Params.external_link }}
+  {{ $show_doi = false }}
+{{ end }}
+
+{{ with $page.Params.url_preprint }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Preprint
+</a>
+{{ end }}
+
+{{ with $page.Params.url_pdf }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  PDF
+</a>
+{{ end }}
+
+{{ with $page.Params.url_code }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Code
+</a>
+{{ end }}
+
+{{ with $page.Params.url_dataset }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Dataset
+</a>
+{{ end }}
+
+{{ with $page.Params.url_poster }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Poster
+</a>
+{{ end }}
+
+{{ with $page.Params.url_project }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Project
+</a>
+{{ end }}
+
+{{ with $page.Params.url_slides }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Slides
+</a>
+{{ end }}
+
+{{ with $page.Params.url_source }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Source
+</a>
+{{ end }}
+
+{{ with $page.Params.url_video }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Video
+</a>
+{{ end }}
+
+{{ with $page.Params.external_link }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+  Website
+</a>
+{{ end }}
+
+{{ if and $show_doi $page.Params.doi }}
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/{{ $page.Params.doi }}" target="_blank" rel="noopener">
+  DOI
+</a>
+{{ end }}

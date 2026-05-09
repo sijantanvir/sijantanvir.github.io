@@ -1,0 +1,57 @@
+{{- define "main" -}}
+
+<article class="article article-project article-project-blog">
+
+  {{ $toc := trim .TableOfContents " \n\r\t" }}
+  {{ $has_toc := and $toc (ne $toc "<nav id=\"TableOfContents\"></nav>") }}
+
+  <div class="container-fluid docs">
+    <div class="row">
+      <div class="col-xl-1 col-lg-1 d-none d-xl-block d-lg-block empty"></div>
+
+      {{ if $has_toc }}
+      <div class="col-2 col-xl-2 col-lg-2 d-none d-lg-block docs-toc">
+        <ul class="nav toc-top">
+          <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+        </ul>
+        {{ .TableOfContents }}
+      </div>
+      {{ else }}
+      <div class="col-2 col-xl-1 col-lg-1 d-none d-lg-block empty"></div>
+      {{ end }}
+
+      <main class="col-xl-9 col-lg-9 docs-content" role="main">
+        <div class="article-container">
+          <div class="pt-3">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.subtitle }}
+            <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
+            {{ end }}
+          </div>
+
+          <div class="article-metadata">
+            <span>Created: {{ .Date.Format "Jan 2, 2006 3:04 PM" }}</span>
+            {{ with .Params.modified }}
+            <span class="middot-divider"></span>
+            <span>Modified: {{ (time .).Format "Jan 2, 2006 3:04 PM" }}</span>
+            {{ else }}
+            {{ with .Lastmod }}
+            <span class="middot-divider"></span>
+            <span>Modified: {{ .Format "Jan 2, 2006 3:04 PM" }}</span>
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="article-style">
+            {{ .Content }}
+          </div>
+
+          {{ partial "page_footer" . }}
+        </div>
+      </main>
+    </div>
+
+  </div>
+</article>
+
+{{- end -}}

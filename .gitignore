@@ -1,0 +1,11 @@
+# IDEs
+.idea/
+
+# Hugo
+/resources/
+public/
+.Rproj.user
+.Rhistory
+assets/jsconfig.json
+*.json
+.hugo_build.lock
