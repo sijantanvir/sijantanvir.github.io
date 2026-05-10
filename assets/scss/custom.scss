@@ -987,6 +987,8 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-su
 #awards .col-12.col-lg-8 > ul,
 #awards .section-content > ul,
 #awards .section-content .article-style > ul {
+  --awards-line-center: 8.5px;
+  --awards-bullet-size: 13px;
   list-style: none;
   position: relative;
   padding-left: 28px;
@@ -998,7 +1000,7 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-su
 #awards .section-content .article-style > ul::before {
   content: "";
   position: absolute;
-  left: 7px;
+  left: calc(var(--awards-line-center) - 1px);
   top: 0;
   bottom: 0;
   width: 2px;
@@ -1019,11 +1021,11 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-su
 #awards .section-content .article-style > ul > li::before {
   content: "";
   position: absolute;
-  left: -25px;
+  left: calc(var(--awards-line-center) - 28px - (var(--awards-bullet-size) / 2));
   top: 0.95em;
   transform: translateY(-50%);
-  width: 13px;
-  height: 13px;
+  width: var(--awards-bullet-size);
+  height: var(--awards-bullet-size);
   border-radius: 50%;
   background: var(--primary);
   border: 2px solid #fff;
@@ -1051,7 +1053,7 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-su
 #awards .section-content .article-style > ul > li > ul::before {
   content: "";
   position: absolute;
-  left: 7px;
+  left: 8px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -1073,7 +1075,7 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-su
 #awards .section-content .article-style > ul > li > ul > li::before {
   content: "";
   position: absolute;
-  left: -25px;
+  left: -26px;
   top: 0.95em;
   transform: translateY(-50%);
   width: 13px;
