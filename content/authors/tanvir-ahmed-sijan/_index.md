@@ -66,4 +66,4 @@ I'm Tanvir Ahmed Sijan, currently pursuing an M.Sc. in Computer Science at [Jaha
 
 My research interests lie in interpretability of LLMs, Cultural and Low Resource NLP. I am currently working under the guidance of [Dr. Md. Musfique Anwar](https://juniv.edu/teachers/musfique.anwar) at the [JU Data Mining Lab](https://ju-data-mining-research-group.netlify.app/), where I focus on NLP and LLM research in low-resource settings. Previously, my undergraduate research involved developing a deep learning framework to model pedestrian crash severity using visual and geospatial data, incorporating explainability techniques.
 
-**Research Interests:** Interpretability of LLMs, Cultural and Low Resource NLP, AI Safety
+**Research Interests:** Mechanistic Interpretability, LLM Alignment, Cultural & Low-Resource NLP, AI Safety
