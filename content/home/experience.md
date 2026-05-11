@@ -20,7 +20,7 @@ subtitle = ""
   date_end = ""
   location = "Jahangirnagar University, Savar, Dhaka"
   description = """
-  Interpretability and Robustness of LLMs, Cultural & Low Resource NLP, AI Safety
+  LLM Based Event Detection, Robustness of LLMs to Noisy Data, Cultural & Low Resource NLP
   """
 
 [[experience]]
