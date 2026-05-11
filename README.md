@@ -1,6 +1,4 @@
-# Tanvir Ahmed Sijan
-
-Personal academic website for [Tanvir Ahmed Sijan](https://sijantanvir.github.io/), built with [Hugo](https://gohugo.io/) and the [Wowchemy Academic](https://wowchemy.com/) framework.
+My personal academic website built with [Hugo](https://gohugo.io/) and the [Wowchemy Academic](https://wowchemy.com/) framework.
 
 This repository contains the source for the site, including homepage sections, publications, posts, static assets, and deployment workflows.
 
@@ -69,4 +67,4 @@ To use the deployment workflow, enable GitHub Pages in the repository settings a
 
 ## Notes
 
-This site is inspired from [https://remi-theriault.com/](https://remi-theriault.com/) , but this repository is maintained as Tanvir Ahmed Sijan's personal website.
+This site design is inspired from [https://remi-theriault.com/](https://remi-theriault.com/) , but this repository is maintained as my personal website.
