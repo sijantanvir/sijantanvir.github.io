@@ -21,7 +21,7 @@ subtitle = "*From Pavements to Transformers*"
   location = "Savar, Dhaka, Bangladesh"
   description = """
 
-- **Current CGPA**: 3.97/4.0 
+- **CGPA**: 3.97/4.0 
 
 Relevant courses:
 
