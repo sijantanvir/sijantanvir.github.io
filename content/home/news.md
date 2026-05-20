@@ -11,7 +11,7 @@ subtitle = "*Latest Checkpoints*"
 +++
 
 - 📆 [**April 2026**]
-  - 🎉 <span class="smallcaps">BanglaSocialBench</span> got **accepted (Oral)** at **ACL 2026 SRW**!
+  - 🎉 <span class="smallcaps">BanglaSocialBench</span> has been accepted for an **Oral Presentation** at **ACL 2026 SRW**!
 
 - 📆 [**March 2026**]
   - 📢 <span class="smallcaps">BanglaSocialBench</span> preprint available on <a href="https://arxiv.org/abs/2603.15949">arXiv</a>; currently under review.
