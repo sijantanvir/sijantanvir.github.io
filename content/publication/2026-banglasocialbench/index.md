@@ -2,8 +2,8 @@
 title: "BanglaSocialBench: A Benchmark for Evaluating Sociopragmatic and Cultural Alignment of LLMs in Bangladeshi Social Interaction"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Accepted at ACL SRW 2026*"
-publication_short: "*Accepted at ACL Student Research Workshop 2026*" # This appears in citation styled cards
+publication: "*Accepted (Oral) at ACL SRW 2026*"
+publication_short: "***Accepted (Oral) at ACL Student Research Workshop 2026***" # This appears in citation styled cards
 venue: "SRW @ ACL 2026"
 
 authors:
