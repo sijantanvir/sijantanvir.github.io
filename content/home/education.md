@@ -45,7 +45,7 @@ Relevant courses:
 
 - Highly selective admission (~5% acceptance rate)
 
-- **CGPA**: 3.77/4.0 
+- Graduated with Honors (**CGPA**: 3.77/4.0) 
 
 Relevant courses:
 
