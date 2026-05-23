@@ -20,8 +20,10 @@ subtitle = ""
   date_end = ""
   location = "Jahangirnagar University, Savar, Dhaka"
   description = """
-  LLM Based Event Detection, Robustness of LLMs to Noisy Data, Cultural & Low Resource NLP
-  """
+
+- **LLM and Noisy Data**: Assessing the robustness and of PLMs and LLMs, specifically analyzing how different training paradigms impact their capability to detect events within noisy, unstructured Bangla text.
+- **Cultural and Low Resource NLP**: Evaluating the sociopragmatic alignment of LLMs in Bangla to measure how effectively current models capture cultural norms and low-resource language constraints.
+    """
 
 [[experience]]
   title = "Research Intern"
