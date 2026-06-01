@@ -13,9 +13,9 @@ subtitle = ""
 
 [[experience]]
   title = "Graduate Researcher"
-  company = "JU Data Mining Research Lab"
-  company_url = "https://ju-data-mining-research-group.netlify.app/"
-  company_logo = "judm.png"
+  company = "JU CIDL Research Lab"
+  company_url = "https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab"
+  company_logo = "cidl.png"
   date_start = "2025-07-01"
   date_end = ""
   location = "Jahangirnagar University, Savar, Dhaka"
