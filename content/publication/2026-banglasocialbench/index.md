@@ -24,6 +24,11 @@ doi: ""
 
 url_preprint: "https://arxiv.org/abs/2603.15949"
 url_pdf: "https://arxiv.org/pdf/2603.15949.pdf"
+url_video: "https://go.screenpal.com/watch/cO1eIXnuQg9"
+video_preview: true
+video_text: ""
+video_disabled: true
+video_disabled_text: "Soon"
 
 external_link: ""
 

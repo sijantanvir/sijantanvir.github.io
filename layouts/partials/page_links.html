@@ -53,9 +53,20 @@
 {{ end }}
 
 {{ with $page.Params.url_video }}
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Video
-</a>
+  {{ $video_text := $page.Params.video_text | default "" }}
+  {{ if $page.Params.video_disabled }}
+    <span class="btn btn-outline-primary btn-page-header btn-sm btn-video btn-video-disabled" aria-label="{{ $page.Params.video_disabled_text | default "Video unavailable" }}" title="{{ $page.Params.video_disabled_text | default "Video unavailable" }}">
+      <i class="fas fa-video-slash" aria-hidden="true"></i>{{ with $page.Params.video_disabled_text }} <span>{{ . }}</span>{{ end }}
+    </span>
+  {{ else if ne $page.Params.video_preview false }}
+    <a class="btn btn-outline-primary btn-page-header btn-sm btn-video" href="{{ . }}" data-video-preview="{{ . }}" aria-label="Video" title="Video">
+      <i class="fas fa-video" aria-hidden="true"></i>{{ with $video_text }} <span>{{ . }}</span>{{ end }}
+    </a>
+  {{ else }}
+    <a class="btn btn-outline-primary btn-page-header btn-sm btn-video" href="{{ . }}" target="_blank" rel="noopener" aria-label="Video" title="Video">
+      <i class="fas fa-video" aria-hidden="true"></i>{{ with $video_text }} <span>{{ . }}</span>{{ end }}
+    </a>
+  {{ end }}
 {{ end }}
 
 {{ with $page.Params.external_link }}
