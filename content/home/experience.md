@@ -21,9 +21,9 @@ subtitle = ""
   location = "Jahangirnagar University, Savar, Dhaka"
   description = """
 
-**Computational Intelligence, Data and Language Lab**
+**Computational Intelligence, Data and Language Research Lab**
 
-- **LLM and Noisy Data**: Assessing the robustness and of PLMs and LLMs, specifically analyzing how different training paradigms impact their capability to detect events within noisy, unstructured Bangla text.
+- **LLM and Noisy Data**: Assessing the robustness of PLMs and LLMs, specifically analyzing how different training paradigms impact their capability to detect events within noisy, unstructured Bangla text.
 - **Cultural and Low Resource NLP**: Evaluating the sociopragmatic alignment of LLMs in Bangla to measure how effectively current models can navigate the sociopragmatic and cultural nuances of the Bangla language within real-world Bangladeshi interactional contexts.
     """
 
