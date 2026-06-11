@@ -6,7 +6,7 @@ active = true
 weight = 22
 
 title = "Education"
-subtitle = ""
+subtitle = "*From Pavements to Transformers*"
 
 [design]
   columns = "2"
@@ -25,7 +25,11 @@ subtitle = ""
 
 Relevant courses:
 
-- Machine Learning, Deep Learning, Natural Language Processing, Data Mining, Artificial Intelligence, Computational Intelligence etc.
+- **Machine Learning & AI:** Machine Learning, Deep Learning, Natural Language Processing, Data Mining, Artificial Intelligence, Computational Intelligence  
+
+- **Core Computer Science:** Data Structures & Algorithms, Database Systems, Operating Systems, Computer Networks, Computer Architecture  
+
+- **Systems & Software:** Programming Languages, Software Engineering  
 
   """
 
@@ -45,8 +49,10 @@ Relevant courses:
 
 Relevant courses:
 
-- Differential and Integral Calculus, Matrices, Laplace Transform and Vector Analysis, Numerical Methods, Applied Mathematics for Engineers, Probability & Statistics, Computer Programming, Engineering Computation etc.
-
+- **Mathematics:** Differential and Integral Calculus, Matrices, Laplace Transform and Vector Analysis, Numerical Methods, Applied Mathematics for Engineers
+- **Statistics:** Probability & Statistics  
+- **Programming:** Computer Programming, Engineering Computation  
+- **Applied:** Transportation Engineering (Pavement Design, Railway and Airport), Structural Analysis, Urban Transportation Planning
   """
 
 +++

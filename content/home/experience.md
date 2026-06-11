@@ -35,11 +35,8 @@ subtitle = ""
   date_end = "2025-09-30"
   description = """
 
-**Projects**: World Bank Heavy-Duty Vehicles (HDV) Baseline Assessment, Akhaura--Tamabil Land Port Feasibility Study. Activities include:
-
-- Modeled baseline air pollution utilizing the MOVES5 to process large-scale BRTA HDV fleet data.    
-- Leveraged QGIS to process spatial datasets. Conducted structured interviews with a complex hierarchy of stakeholders, from drivers, owners’ association to local leaders across all seven administrative divisions.
-- Synthesized extensive literature and qualitative data into policy-oriented technical reports alongside project engineers and research scientists.
+- **Projects**: Heavy-Duty Vehicles Study (**World Bank**) & Akhaura–Tamabil Land Port Feasibility Study (**Asian Development Bank, ADB**)
+  - Modeled emissions and spatial data using MOVES5 and QGIS, conducted nationwide stakeholder interviews, and synthesized findings to co-author policy-oriented technical reports.
 
 """
 
