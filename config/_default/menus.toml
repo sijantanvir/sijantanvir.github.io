@@ -14,14 +14,19 @@
   weight = 20
 
 [[main]]
-  name = "Education"
-  url = "#education"
-  weight = 23
-
-[[main]]
   name = "News"
   url = "#news"
+  weight = 22
+
+[[main]]
+  name = "Education"
+  url = "#education"
   weight = 24
+
+[[main]]
+  name = "Experience"
+  url = "#experience"
+  weight = 26
 
 # [[main]]
 #   name = "Projects"
@@ -29,14 +34,14 @@
 #   weight = 25
 
 [[main]]
-  name = "Awards"
-  url = "#awards"
-  weight = 27
-
-[[main]]
   name = "Publication"
   url = "publications"
   weight = 30
+
+[[main]]
+  name = "Awards"
+  url = "#awards"
+  weight = 35
 
 # [[main]]
 #   name = "Blog"

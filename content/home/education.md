@@ -1,6 +1,7 @@
 +++
 # Education section (Experience-style timeline)
 widget = "experience"
+
 headless = true
 active = true
 weight = 22
@@ -21,8 +22,6 @@ subtitle = ""
   location = "Savar, Dhaka, Bangladesh"
   description = """
 
-- **CGPA**: 3.97/4.0 
-
 Relevant courses:
 
 - Machine Learning, Deep Learning, Natural Language Processing, Data Mining, Artificial Intelligence, Computational Intelligence etc.
@@ -38,10 +37,6 @@ Relevant courses:
   date_end = "2025-03-25"
   location = "Palashi, Dhaka, Bangladesh"
   description = """
-
-- Highly selective admission (~5% acceptance rate)
-
-- Graduated with Honors (**CGPA**: 3.77/4.0) 
 
 Relevant courses:
 

@@ -823,6 +823,12 @@ body.dark #blog.home-section > .container,
   padding-top: 0.5rem;
 }
 
+/* Tighten Experience -> Publications transition */
+#experience.home-section + #publications.home-section {
+  margin-top: 0;
+  padding-top: 0.35rem;
+}
+
 /* Tighten Publications/Projects -> Awards transition */
 #publications.home-section + #awards.home-section,
 #projects.home-section + #awards.home-section {
