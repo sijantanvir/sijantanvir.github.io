@@ -62,8 +62,6 @@ email: ""
 
 ---
 
-Hi !👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing M.Sc. in Computer Science at [Jahangirnagar University](https://juniv.edu/). I completed my Bachelor's degree in Civil Engineering from the [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/).
+Hi !👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing M.Sc. in Computer Science at [Jahangirnagar University](https://juniv.edu/). I completed my Bachelor's degree in Civil Engineering from [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/).
 
-My research interests lie in interpretability of LLMs, LLM Alignment, Cultural and Low Resource NLP. I am currently working under the guidance of [Dr. Md. Musfique Anwar](https://juniv.edu/teachers/musfique.anwar) at the [JU CIDL Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab), where I focus on NLP and LLM research in low-resource settings. Previously, my undergraduate research involved developing a deep learning framework to model pedestrian crash severity using visual and geospatial data, incorporating explainability techniques.
-
-**Research Interests:** LLM Interpretability, LLM Alignment, Cultural & Low-Resource NLP, AI Safety
+My research interests broadly encompass Computational Linguistics and Natural Language Processing. My recent work explores the evaluation, robustness, and generalization of large language models and NLP systems, with interests spanning event extraction, cultural alignment, particularly for low-resource languages. Recently I am also exploring LLM interpretability and alignment for AI safety. I am currently working under the guidance of [Dr. Md. Musfique Anwar](https://juniv.edu/teachers/musfique.anwar) at the [Computational Intelligence, Data and Language (CIDL) Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab). Previously, my undergraduate research involved developing a deep learning framework to model pedestrian crash severity using visual and geospatial data, incorporating explainability techniques.

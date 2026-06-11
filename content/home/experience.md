@@ -21,8 +21,10 @@ subtitle = ""
   location = "Jahangirnagar University, Savar, Dhaka"
   description = """
 
+**Computational Intelligence, Data and Language Lab**
+
 - **LLM and Noisy Data**: Assessing the robustness and of PLMs and LLMs, specifically analyzing how different training paradigms impact their capability to detect events within noisy, unstructured Bangla text.
-- **Cultural and Low Resource NLP**: Evaluating the sociopragmatic alignment of LLMs in Bangla to measure how effectively current models capture cultural norms and low-resource language constraints.
+- **Cultural and Low Resource NLP**: Evaluating the sociopragmatic alignment of LLMs in Bangla to measure how effectively current models can navigate the sociopragmatic and cultural nuances of the Bangla language within real-world Bangladeshi interactional contexts.
     """
 
 [[experience]]
@@ -36,7 +38,7 @@ subtitle = ""
   description = """
 
 - **Projects**: Heavy-Duty Vehicles Study (**World Bank**) & Akhaura–Tamabil Land Port Feasibility Study (**Asian Development Bank, ADB**)
-  - Modeled emissions and spatial data using MOVES5 and QGIS, conducted nationwide stakeholder interviews, and synthesized findings to co-author policy-oriented technical reports.
+  - Analyzed large-scale BRTA fleet data to model vehicular emissions, performed spatial analysis with QGIS, conducted nationwide stakeholder interviews, and synthesized findings for policy-oriented technical reports.
 
 """
 
