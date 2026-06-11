@@ -23,8 +23,8 @@ subtitle = ""
 
 **Computational Intelligence, Data and Language Research Lab**
 
-- **LLM and Noisy Data**: Assessing the robustness of PLMs and LLMs, specifically analyzing how different training paradigms impact their capability to detect events within noisy, unstructured Bangla text.
-- **Cultural and Low Resource NLP**: Evaluating the sociopragmatic alignment of LLMs in Bangla to measure how effectively current models can navigate the sociopragmatic and cultural nuances of the Bangla language within real-world Bangladeshi interactional contexts.
+- **LLM and Noisy Data**: Assessing the robustness of PLMs and LLMs, analyzing how different training paradigms impact their capability to detect events within noisy text.
+- **Cultural and Low Resource NLP**: Evaluating how effectively large language models can navigate the sociopragmatic and cultural nuances of Bangla language within real-world Bangladeshi social interaction.
     """
 
 [[experience]]
@@ -37,8 +37,9 @@ subtitle = ""
   date_end = "2025-09-30"
   description = """
 
-- **Projects**: Heavy-Duty Vehicles Study (**World Bank**) & Akhaura–Tamabil Land Port Feasibility Study (**Asian Development Bank, ADB**)
-  - Analyzed large-scale BRTA fleet data to model vehicular emissions, performed spatial analysis with QGIS, conducted nationwide stakeholder interviews, and synthesized findings for policy-oriented technical reports.
+**Projects**: Heavy-Duty Vehicles Study (**World Bank**) & Akhaura–Tamabil Land Port Feasibility Study (**Asian Development Bank**)
+
+- Analyzed large-scale BRTA fleet data to model vehicular emissions, performed spatial analysis with QGIS, conducted nationwide stakeholder interviews, and synthesized findings for policy-oriented technical reports.
 
 """
 
