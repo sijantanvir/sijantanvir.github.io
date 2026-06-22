@@ -17,7 +17,7 @@ highlight_name: true
 #     url: "https://as.nyu.edu/psychology/people/faculty.remi-theriault.html"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Low Resource Computtional Linguistics, Cultural Alignment, Computtional Linguistics, NLP For Social Good
+bio: My research interests include Computtional Linguistics, Cultural Alignment, NLP For Social Good, Human-AI Alignment
 
 # Social/Academic Networking
 # For available icons, see: 
