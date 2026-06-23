@@ -6,7 +6,7 @@ active = true
 weight = 31
 
 title = "[Publication](/publications/)"
-subtitle = """*Publications and Preprints*"""
+subtitle = """*Selected Publications and Preprints*"""
 
 [content]
   page_type = "publication"

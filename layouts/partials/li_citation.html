@@ -13,13 +13,16 @@
 {{ else if .Params.publication }}
   {{ $venue_short = .Params.publication | markdownify }}
 {{ end }}
+{{ $show_publication_summary := site.Params.publications.show_summary | default false }}
 {{ $card_summary := "" }}
-{{ if .Params.summary }}
-  {{ $card_summary = .Params.summary | markdownify | emojify }}
-{{ else if .Params.abstract }}
-  {{ $card_summary = .Params.abstract | markdownify | emojify }}
-{{ else if .Summary }}
-  {{ $card_summary = .Summary }}
+{{ if $show_publication_summary }}
+  {{ if .Params.summary }}
+    {{ $card_summary = .Params.summary | markdownify | emojify }}
+  {{ else if .Params.abstract }}
+    {{ $card_summary = .Params.abstract | markdownify | emojify }}
+  {{ else if .Summary }}
+    {{ $card_summary = .Summary }}
+  {{ end }}
 {{ end }}
 
 <div class="pub-list-item{{ if eq .Type "publication" }} pub-list-item-card{{ end }}" style="margin-bottom: 1rem">

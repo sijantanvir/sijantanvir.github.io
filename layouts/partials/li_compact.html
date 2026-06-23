@@ -19,13 +19,19 @@
 {{ $has_attachments := partial "functions/has_attachments" . }}
 
 {{/* Get summary. */}}
+{{ $show_summary := true }}
+{{ if eq $item.Type "publication" }}
+  {{ $show_summary = site.Params.publications.show_summary | default false }}
+{{ end }}
 {{ $summary := "" }}
-{{ if $item.Params.summary }}
-  {{ $summary = $item.Params.summary | markdownify | emojify }}
-{{ else if .Params.abstract }}
-  {{ $summary = .Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
-{{ else if $item.Summary }}
-  {{ $summary = $item.Summary }}
+{{ if $show_summary }}
+  {{ if $item.Params.summary }}
+    {{ $summary = $item.Params.summary | markdownify | emojify }}
+  {{ else if .Params.abstract }}
+    {{ $summary = .Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+  {{ else if $item.Summary }}
+    {{ $summary = $item.Summary }}
+  {{ end }}
 {{ end }}
 <div class="media stream-item">
   <div class="media-body">

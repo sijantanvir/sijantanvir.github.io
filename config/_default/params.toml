@@ -195,6 +195,12 @@ plugins_js  = []
   # Citation style ("apa" or "mla")
   citation_style = "apa"
 
+  # Show the video button for publication links when `url_video` is set.
+  show_video_button = false
+
+  # Show publication abstract/summary text in list and citation card views.
+  show_summary = false
+
 # Configuration of project pages.
 [projects]
   # Views for associated content.

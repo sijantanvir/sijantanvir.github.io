@@ -6,77 +6,83 @@
 
 {{ with $page.Params.url_preprint }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Preprint
+  {{ $page.Params.url_preprint_text | default "Preprint" }}
 </a>
 {{ end }}
 
 {{ with $page.Params.url_pdf }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  PDF
+  {{ $page.Params.url_pdf_text | default "PDF" }}
 </a>
 {{ end }}
 
 {{ with $page.Params.url_code }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Code
+  {{ $page.Params.url_code_text | default "Code" }}
 </a>
 {{ end }}
 
 {{ with $page.Params.url_dataset }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Dataset
+  {{ $page.Params.url_dataset_text | default "Dataset" }}
 </a>
 {{ end }}
 
 {{ with $page.Params.url_poster }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Poster
+  {{ $page.Params.url_poster_text | default "Poster" }}
 </a>
 {{ end }}
 
 {{ with $page.Params.url_project }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Website
+  {{ $page.Params.url_project_text | default "Website" }}
 </a>
 {{ end }}
 
 {{ with $page.Params.url_slides }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Slides
+  {{ $page.Params.url_slides_text | default "Slides" }}
 </a>
 {{ end }}
 
 {{ with $page.Params.url_source }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Source
+  {{ $page.Params.url_source_text | default "Source" }}
 </a>
 {{ end }}
 
-{{ with $page.Params.url_video }}
-  {{ $video_text := $page.Params.video_text | default "" }}
-  {{ if $page.Params.video_disabled }}
-    <span class="btn btn-outline-primary btn-page-header btn-sm btn-video btn-video-disabled" aria-label="{{ $page.Params.video_disabled_text | default "Video unavailable" }}" title="{{ $page.Params.video_disabled_text | default "Video unavailable" }}">
-      <i class="fas fa-video-slash" aria-hidden="true"></i>{{ with $page.Params.video_disabled_text }} <span>{{ . }}</span>{{ end }}
-    </span>
-  {{ else if ne $page.Params.video_preview false }}
-    <a class="btn btn-outline-primary btn-page-header btn-sm btn-video" href="{{ . }}" data-video-preview="{{ . }}" aria-label="Video" title="Video">
-      <i class="fas fa-video" aria-hidden="true"></i>{{ with $video_text }} <span>{{ . }}</span>{{ end }}
-    </a>
-  {{ else }}
-    <a class="btn btn-outline-primary btn-page-header btn-sm btn-video" href="{{ . }}" target="_blank" rel="noopener" aria-label="Video" title="Video">
-      <i class="fas fa-video" aria-hidden="true"></i>{{ with $video_text }} <span>{{ . }}</span>{{ end }}
-    </a>
+{{ $show_video_button := true }}
+{{ if eq $page.Type "publication" }}
+  {{ $show_video_button = site.Params.publications.show_video_button | default false }}
+{{ end }}
+{{ if $show_video_button }}
+  {{ with $page.Params.url_video }}
+    {{ $video_text := $page.Params.video_text | default "" }}
+    {{ if $page.Params.video_disabled }}
+      <span class="btn btn-outline-primary btn-page-header btn-sm btn-video btn-video-disabled" aria-label="{{ $page.Params.video_disabled_text | default "Video unavailable" }}" title="{{ $page.Params.video_disabled_text | default "Video unavailable" }}">
+        <i class="fas fa-video-slash" aria-hidden="true"></i>{{ with $page.Params.video_disabled_text }} <span>{{ . }}</span>{{ end }}
+      </span>
+    {{ else if ne $page.Params.video_preview false }}
+      <a class="btn btn-outline-primary btn-page-header btn-sm btn-video" href="{{ . }}" data-video-preview="{{ . }}" aria-label="Video" title="Video">
+        <i class="fas fa-video" aria-hidden="true"></i>{{ with $video_text }} <span>{{ . }}</span>{{ end }}
+      </a>
+    {{ else }}
+      <a class="btn btn-outline-primary btn-page-header btn-sm btn-video" href="{{ . }}" target="_blank" rel="noopener" aria-label="Video" title="Video">
+        <i class="fas fa-video" aria-hidden="true"></i>{{ with $video_text }} <span>{{ . }}</span>{{ end }}
+      </a>
+    {{ end }}
   {{ end }}
 {{ end }}
 
 {{ with $page.Params.external_link }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}" target="_blank" rel="noopener">
-  Website
+  {{ $page.Params.external_link_text | default "Website" }}
 </a>
 {{ end }}
 
 {{ if and $show_doi $page.Params.doi }}
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/{{ $page.Params.doi }}" target="_blank" rel="noopener">
-  DOI
+  {{ $page.Params.doi_text | default "DOI" }}
 </a>
 {{ end }}
