@@ -179,22 +179,6 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var abstracts = document.querySelectorAll('.pub .pub-abstract');
-    if (!abstracts.length) return;
-
-    abstracts.forEach(function (abstract) {
-      var heading = abstract.previousElementSibling;
-      if (heading && heading.tagName === 'H3') {
-        heading.remove();
-      }
-
-      abstract.remove();
-    });
-  });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
     function addMoreButton(sectionId, href, label) {
       var section = document.getElementById(sectionId);
       if (!section) return;

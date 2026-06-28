@@ -1,7 +1,19 @@
 {{ $page := .page | default . }}
+{{ $abstract_text := "" }}
+{{ if $page.Params.abstract }}
+  {{ $abstract_text = $page.Params.abstract | markdownify | plainify | htmlUnescape }}
+{{ else if $page.Params.summary }}
+  {{ $abstract_text = $page.Params.summary | markdownify | plainify | htmlUnescape }}
+{{ end }}
 {{ $show_doi := true }}
 {{ if and (eq $page.Type "publication") $page.Params.external_link }}
   {{ $show_doi = false }}
+{{ end }}
+
+{{ if and (eq $page.Type "publication") $abstract_text }}
+<a class="btn btn-outline-primary btn-page-header btn-sm btn-abs" href="{{ $page.RelPermalink }}">
+  Abs
+</a>
 {{ end }}
 
 {{ with $page.Params.url_preprint }}

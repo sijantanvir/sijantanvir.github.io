@@ -688,6 +688,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em; /* optional, improves readability */
 }
 
+.author-highlighted,
+.author-highlighted a {
+  font-weight: 400 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.12em;
+}
+
 /*************************************************
  *  Scroll Progress Bar (Blog)
  **************************************************/
@@ -989,6 +997,10 @@ body.dark #experience a,
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
 }
 
+#publications.home-publications-cards .pub-list-item-card .pub-card-content {
+  min-width: 0;
+}
+
 #publications.home-publications-cards .pub-card-venue,
 #publications.home-publications-cards .pub-card-venue em {
   position: absolute;
@@ -1012,24 +1024,58 @@ body.dark #experience a,
   font-style: normal;
 }
 
-#publications.home-publications-cards .pub-list-item-card .pub-icon {
-  margin-top: 0.05rem;
-}
-
 #publications.home-publications-cards .pub-list-item-card .li-cite-author,
 #publications.home-publications-cards .pub-list-item-card .article-metadata {
-  line-height: 1.6;
+  line-height: 1.55;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-title {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-title a:hover,
+#publications.home-publications-cards .pub-list-item-card .pub-card-title a:focus {
+  text-decoration: underline;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-authors {
+  margin-bottom: 0.22rem;
+  font-size: 0.92rem;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-meta,
+#publications.home-publications-cards .pub-list-item-card .pub-card-meta em {
+  margin-bottom: 0.12rem;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-meta {
+  font-style: normal;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-meta em {
+  font-style: italic;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-year {
+  color: inherit;
 }
 
 #publications.home-publications-cards .pub-list-item-card .pub-card-summary {
   display: -webkit-box;
   margin-top: 0.55rem;
-  margin-left: 0.35rem;
-  margin-right: 0.35rem;
   color: #4b5563;
   font-size: 0.88rem;
   line-height: 1.55;
-  text-align: justify;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
@@ -1041,12 +1087,16 @@ body.dark #experience a,
 
 #publications.home-publications-cards .pub-list-item-card .btn-links {
   margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
 }
 
 #publications.home-publications-cards .pub-list-item-card .btn-links .btn {
   border-radius: 999px;
   padding: 0.32rem 0.72rem;
   font-size: 0.76rem;
+  margin: 0;
 }
 
 #publications.home-publications-cards .pub-list-item-card .article-tags {
@@ -1080,6 +1130,15 @@ html.dark #publications.home-publications-cards .pub-list-item-card .pub-card-su
 body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-summary,
 .dark #publications.home-publications-cards .pub-list-item-card .pub-card-summary {
   color: rgba(255, 255, 255, 0.78);
+}
+
+html.dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta,
+html.dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta em,
+body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta,
+body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta em,
+.dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta,
+.dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta em {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 /*************************************************
