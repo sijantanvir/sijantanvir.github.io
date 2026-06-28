@@ -31,7 +31,7 @@ url_pdf: "https://aclanthology.org/2026.acl-srw.22/"
 url_pdf_text: "PDF"
 url_video: "https://go.screenpal.com/watch/cO1eIXnuQg9"
 video_preview: false
-video_text: ""
+video_text: "Video"
 video_disabled: true
 video_disabled_text: ""
 
