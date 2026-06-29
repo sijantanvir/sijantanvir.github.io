@@ -60,7 +60,11 @@
         {{ end }}
         <li>
           <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+            {{ if and (eq $pack "fab") (eq .icon "twitter") }}
+            <span class="big-icon social-x-icon" aria-hidden="true">X</span>
+            {{ else }}
             <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+            {{ end }}
           </a>
         </li>
         {{ end }}

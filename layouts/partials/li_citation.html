@@ -1,7 +1,15 @@
 {{ $has_attachments := partial "functions/has_attachments" . }}
 {{ $title_link := .RelPermalink }}
 {{ $title_target := "" }}
-{{ if .Params.url_pdf }}
+{{ $pub_type_param := .Params.publication_types | default (slice 0) }}
+{{ $pub_type := 0 }}
+{{ if gt (len $pub_type_param) 0 }}
+  {{ $pub_type = int (index $pub_type_param 0) }}
+{{ end }}
+{{ if and (eq .Type "publication") (eq $pub_type 3) .Params.url_preprint }}
+  {{ $title_link = .Params.url_preprint }}
+  {{ $title_target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ else if .Params.url_pdf }}
   {{ $title_link = .Params.url_pdf }}
   {{ $title_target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}

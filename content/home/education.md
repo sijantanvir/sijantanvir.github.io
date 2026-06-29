@@ -3,7 +3,7 @@
 widget = "experience"
 
 headless = true
-active = true
+active = false
 weight = 22
 
 title = "Education"

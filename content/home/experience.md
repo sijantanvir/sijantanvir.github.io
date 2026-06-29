@@ -2,7 +2,7 @@
 # Experience section (Experience-style timeline)
 widget = "experience"
 headless = true
-active = true
+active = false
 weight = 23
 
 title = "Experience"
