@@ -3,8 +3,8 @@ title: "BanglaSocialBench: A Benchmark for Evaluating Sociopragmatic and Cultura
 
 # Publication name and optional abbreviated publication name.
 publication: "*Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)*"
-publication_short: "*ACL 2026 Student Research Workshop (Oral)*" # This appears in citation styled cards
-venue: "SRW @ ACL 2026"
+publication_short: "*Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)*" # This appears in citation styled cards
+venue: "SRW @ ACL 2026 (Oral)"
 
 authors:
 - Tanvir Ahmed Sijan
