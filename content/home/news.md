@@ -10,6 +10,9 @@ subtitle = "*Latest Checkpoints*"
 
 +++
 
+- 📆 [**July 2026**]	
+  - 📢 Our paper on encoder and decoder robustness for event detection in noisy text is now available on [arXiv](https://arxiv.org/abs/2606.30914).
+
 - 📆 [**April 2026**]
   - 🎉 <span class="smallcaps">BanglaSocialBench</span> has been accepted for **Oral Presentation** at **ACL 2026 SRW**!
 

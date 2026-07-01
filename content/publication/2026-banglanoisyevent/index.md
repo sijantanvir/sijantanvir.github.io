@@ -22,12 +22,12 @@ date: "2026-03-16T21:58:32Z"
 doi: ""
 doi_text: ""
 
-url_preprint: "https://arxiv.org/submit/7766898/view"
+url_preprint: "https://arxiv.org/abs/2606.30914"
 url_preprint_text: "arXiv"
 external_link: "https://github.com/sijantanvir/Bangla-Noisy-Event-Eval"
 external_link_text: "Code" # Code
-url_pdf: ""
-url_pdf_text: "" # PDF
+url_pdf: "https://arxiv.org/pdf/2606.30914.pdf"
+url_pdf_text: "PDF" # PDF
 url_video: ""
 video_preview: false
 video_text: "Video"

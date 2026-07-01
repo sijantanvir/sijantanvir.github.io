@@ -396,19 +396,6 @@ h2,
     max-width: 1120px;
   }
 }
-.btn.btn-outline-primary.btn-page-header[href*="arxiv.org/abs"] {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
-}
-
-.btn.btn-outline-primary.btn-page-header[href*="arxiv.org/abs"]:hover,
-.btn.btn-outline-primary.btn-page-header[href*="arxiv.org/abs"]:focus {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
-}
-
 .btn.btn-outline-primary.btn-page-header.btn-video {
   background-color: #f5477d;
   border-color: #f5477d;
