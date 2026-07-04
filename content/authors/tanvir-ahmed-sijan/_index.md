@@ -66,4 +66,4 @@ Hi !👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing M.Sc. in Computer Scienc
 
 My research interests broadly encompass Computational Linguistics and Natural Language Processing. My recent work focuses on the evaluation, robustness, and generalization of large language models and NLP systems, with interests spanning cultural alignment, developing evaluation frameworks, and event extraction. I have also been exploring LLM interpretability and alignment for AI safety. I am currently working under the guidance of [Dr. Md. Musfique Anwar](https://juniv.edu/teachers/musfique.anwar) at the [Computational Intelligence, Data and Language (CIDL) Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab). Previously, my undergraduate research involved developing a deep learning framework to model pedestrian crash severity using visual and geospatial data, incorporating explainability techniques.
 
-**Research Interests:**  Computational Linguistics, Human-AI Alignment, NLP for Social GoodMechanistic Interpretability
+**Research Interests:**  Computational Linguistics, Human-AI Alignment, NLP for Social Good, Mechanistic Interpretability
