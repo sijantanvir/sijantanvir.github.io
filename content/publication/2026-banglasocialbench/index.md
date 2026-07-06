@@ -42,5 +42,5 @@ abstract: "Large Language Models have demonstrated strong multilingual fluency, 
 
 
 
-# tags: ["Cultural Alignment", "LLM", "Evaluation"]
+tags: ["🏆 Best Paper"]
 ---
