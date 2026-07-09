@@ -62,10 +62,8 @@ email: ""
 
 ---
 
-Hi !👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing M.Sc. in Computer Science at [Jahangirnagar University](https://juniv.edu/). I completed my Bachelor's degree in Civil Engineering from [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/).
+Hi! 👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing an M.Sc. in Computer Science at [Jahangirnagar University](https://juniv.edu/) through a project-based program under the supervision of *Dr. Md. Musfique Anwar* at the [Computational Intelligence, Data and Language Research Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab),  with my research focused on Natural Language Processing. I completed my Bachelor's degree in Civil Engineering from [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/).
 
-My research interests lie broadly in Computational Linguistics and Natural Language Processing, particularly in (1) Human-AI alignment, (2) developing robust evaluation frameworks for large language models, and (3) investigating model internals to advance LLM interpretability and AI safety. My recent work spans cultural alignment, event extraction, and mechanistic interpretability of language models.
-
-I am currently working under the guidance of [Dr. Md. Musfique Anwar](https://juniv.edu/teachers/musfique.anwar) at the [Computational Intelligence, Data and Language Research Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab). Previously, my undergraduate research involved developing a deep learning framework to model pedestrian crash severity using visual and geospatial data, incorporating explainability techniques.
+My research interests lie broadly in Computational Linguistics and NLP particularly in (1) Human-AI alignment, (2) developing robust evaluation frameworks for large language models, and (3) investigating model internals to advance LLM interpretability and AI safety. My recent work spans cultural alignment, event extraction, and mechanistic interpretability of language models.  Before transitioning to NLP, my undergraduate research involved developing a deep learning framework to model pedestrian crash severity using visual and geospatial data, incorporating explainability techniques.
 
 **Research Interests:**  Computational Linguistics, Human-AI Alignment, NLP for Social Good, Mechanistic Interpretability
