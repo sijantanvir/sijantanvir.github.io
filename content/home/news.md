@@ -12,7 +12,7 @@ subtitle = "*Latest Checkpoints*"
 
 - 📆 [**July 2026**]	
   - 🚧 **Work-in-progress**: Finalizing a new mechanistic interpretability project on cross-format arithmetic neurons
-  - 🏆BanglaSocialBench has received the **Best Paper Award** at **ACL SRW 2026**!
+  - 🏆BanglaSocialBench has received **Best Paper Award** at **ACL SRW 2026**!
   - 📢 Our paper on encoder and decoder robustness for event detection in noisy text is now available on [arXiv](https://arxiv.org/abs/2606.30914).
   
 - 📆 [**April 2026**]
