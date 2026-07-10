@@ -29,10 +29,10 @@ external_link: "https://github.com/sijantanvir/bangla-social-bench"
 external_link_text: "Code"
 url_pdf: "https://aclanthology.org/2026.acl-srw.22/"
 url_pdf_text: "PDF"
-url_video: "https://go.screenpal.com/watch/cO1eIXnuQg9"
-video_preview: false
-video_text: "Video"
-video_disabled: true
+url_video: "https://youtu.be/DfGl9IRZNCY"
+video_preview: true
+video_text: ""
+video_disabled: false
 video_disabled_text: ""
 
 
