@@ -998,6 +998,11 @@ body.dark #experience a,
   min-width: 0;
 }
 
+#publications.home-publications-cards .pub-list-item-card .pub-card-text {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
 #publications.home-publications-cards .pub-card-venue,
 #publications.home-publications-cards .pub-card-venue em {
   position: absolute;

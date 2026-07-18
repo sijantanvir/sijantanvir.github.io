@@ -14,7 +14,25 @@
 
 <div class="pub">
 
-  {{ partial "page_header.html" . }}
+  <div class="article-container pt-3">
+    <h1>{{ .Title }}</h1>
+
+    <div class="article-metadata">
+      {{ if .Params.authors }}
+      <div>
+        {{ partial "page_metadata_authors" . }}
+      </div>
+      {{ end }}
+
+      <span class="article-date">
+        {{ .Date.Format "January 2, 2006" }}
+      </span>
+    </div>
+
+    <div class="btn-links mb-3">
+      {{ partial "page_links" (dict "page" . "is_list" 0) }}
+    </div>
+  </div>
 
   <div class="article-container">
 
