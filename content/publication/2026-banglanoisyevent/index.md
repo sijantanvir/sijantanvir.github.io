@@ -3,7 +3,7 @@ title: "Beyond Clean Text: Evaluating Encoder and Decoder Robustness for Bangla 
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "arXiv Preprint" # This appears in citation styled cards
+publication_short: "arXiv preprint arXiv:2606.30914, June 2026" # This appears in citation styled cards
 venue: "Preprint"
 
 authors:
@@ -17,7 +17,7 @@ publication_types:
 
 featured: false
 
-date: "2026-03-16T21:58:32Z"
+date: "2026-06-29T00:00:00"
 
 doi: ""
 doi_text: ""

@@ -29,3 +29,5 @@ subtitle = """*Selected Publications and Preprints*"""
   css_style = ""
   css_class = "home-publications-cards"
 +++
+
+\* indicates equal contribution.

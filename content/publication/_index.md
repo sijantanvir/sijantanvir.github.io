@@ -17,3 +17,5 @@ header:
 
 #aliases: ["/publications/"]
 ---
+
+\* indicates equal contribution.
