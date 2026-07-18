@@ -1165,6 +1165,12 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-me
   color: rgba(255, 255, 255, 0.72);
 }
 
+@media (max-width: 575.98px) {
+  #publications.home-publications-cards .pub-list-item-card .tag-best-paper-award {
+    display: none;
+  }
+}
+
 /*************************************************
  *  Education Title Color (No Muted)
  **************************************************/

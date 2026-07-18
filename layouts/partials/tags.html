@@ -5,7 +5,7 @@
   {{ $tag := .LinkTitle | lower }}
   {{ $is_under_review := or (eq $tag "under review") (eq $tag "under-review") }}
   {{ $is_best_paper := in $tag "best paper" }}
-  <a class="badge badge-light{{ if $is_under_review }} tag-under-review{{ end }}{{ if $is_best_paper }} tag-best-paper{{ end }}" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  <a class="badge badge-light{{ if $is_under_review }} tag-under-review{{ end }}{{ if $is_best_paper }} tag-best-paper{{ end }}" href="{{ .RelPermalink }}">{{ if $is_best_paper }}<span class="tag-best-paper-core">{{ replace .LinkTitle " Award" "" }}</span><span class="tag-best-paper-award"> Award</span>{{ else }}{{ .LinkTitle }}{{ end }}</a>
   {{ end }}
 </div>
 {{ end }}
