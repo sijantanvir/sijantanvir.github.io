@@ -42,5 +42,5 @@ abstract: "Large Language Models have demonstrated strong multilingual fluency, 
 
 
 
-tags: ["🏆 Best Paper"]
+tags: ["🏆 Best Paper Award"]
 ---
