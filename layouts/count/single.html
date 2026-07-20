@@ -1,0 +1,9 @@
+{{- define "main" -}}
+<div class="article-container pt-3">
+  <h1>{{ .Title }}</h1>
+</div>
+
+<div class="article-container">
+  {{ partial "flag_counter.html" . }}
+</div>
+{{- end -}}
