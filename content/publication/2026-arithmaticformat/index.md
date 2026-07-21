@@ -25,7 +25,7 @@ date: "2026-07-18T00:00:00Z"
 doi: ""
 doi_text: ""
 
-url_preprint: "https://arxiv.org/submit/7841319/view"
+url_preprint: "https://arxiv.org/pdf/2607.16693"
 url_preprint_text: "arXiv"
 external_link: "https://github.com/SharathHN/format-invariant-arithmetic"
 external_link_text: "Code"
