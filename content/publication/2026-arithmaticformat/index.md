@@ -3,7 +3,7 @@ title: "Are Arithmetic Heuristic Neurons Form-Invariant? A Mechanistic Analysis 
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "arXiv preprint arXiv:2607.16693" # This appears in citation styled cards
+publication_short: "arXiv preprint arXiv:2607.16693, July 2026" # This appears in citation styled cards
 venue: "Preprint"
 
 authors:
