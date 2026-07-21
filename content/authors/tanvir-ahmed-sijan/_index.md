@@ -11,13 +11,9 @@ role: Prospective PhD Applicant
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
-# Organizations/Affiliations to show in About widget
-# organizations:
-#   - name: New York University
-#     url: "https://as.nyu.edu/psychology/people/faculty.remi-theriault.html"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Computational Linguistics, Cultural Alignment, NLP for Social Good, and Human-AI Alignment.
+bio: My research interests include Computational Linguistics, Natural Language Processing, Human-AI Alignment. Mechanistic Interpretability 
 
 # Social/Academic Networking
 # For available icons, see: 
@@ -62,8 +58,6 @@ email: ""
 
 ---
 
-Hi! 👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing an M.Sc. in Computer Science at [Jahangirnagar University](https://juniv.edu/) through a project-based program under the supervision of *Dr. Md. Musfique Anwar* at the [Computational Intelligence, Data and Language Research Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab),  with my research focused on Natural Language Processing. I completed my Bachelor's degree in Civil Engineering from [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/).
+Hi! 👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing an M.Sc. in Computer Science at [Jahangirnagar University](https://juniv.edu/) through a project-based program under the supervision of *Dr. Md. Musfique Anwar* at the [Computational Intelligence, Data and Language Research Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab),  with my research focused on **Natural Language Processing**. I completed my Bachelor's degree in Civil Engineering from [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/).
 
 My research interests lie broadly in Computational Linguistics and Natural Language Processing particularly in (1) Human-AI alignment, (2) Developing robust evaluation frameworks for LLMs and (3) Investigating model internals to advance LLM interpretability and AI safety. My recent work spans cultural alignment, event extraction, and mechanistic interpretability of LLMs.  
-
-**Research Interests:**  Computational Linguistics, Human-AI Alignment, NLP for Social Good, Mechanistic Interpretability

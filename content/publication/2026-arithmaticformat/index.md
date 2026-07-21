@@ -3,7 +3,7 @@ title: "Are Arithmetic Heuristic Neurons Form-Invariant? A Mechanistic Analysis 
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "arXiv Preprint" # This appears in citation styled cards
+publication_short: "arXiv preprint arXiv:2607.16693" # This appears in citation styled cards
 venue: "Preprint"
 
 authors:
@@ -25,12 +25,12 @@ date: "2026-07-18T00:00:00Z"
 doi: ""
 doi_text: ""
 
-url_preprint: "https://arxiv.org/pdf/2607.16693"
+url_preprint: "https://arxiv.org/abs/2607.16693"
 url_preprint_text: "arXiv"
 external_link: "https://github.com/SharathHN/format-invariant-arithmetic"
 external_link_text: "Code"
-url_pdf: ""
-url_pdf_text: ""
+url_pdf: "https://arxiv.org/pdf/2607.16693"
+url_pdf_text: "PDF"
 url_video: ""
 video_preview: false
 video_text: ""
