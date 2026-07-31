@@ -61,3 +61,5 @@ email: ""
 Hi! 👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing an M.Sc. in Computer Science at [Jahangirnagar University](https://juniv.edu/) through a project-based program under the supervision of *Dr. Md. Musfique Anwar* at the [Computational Intelligence, Data and Language Research Lab](https://sites.google.com/juniv.edu/mdmusfiqueanwar/ju-cidl-lab),  with my research focused on **Natural Language Processing**. I completed my Bachelor's degree in Civil Engineering from [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/).
 
 My research interests lie broadly in Computational Linguistics and Natural Language Processing particularly in (1) Human-AI alignment, (2) Developing robust evaluation frameworks for LLMs and (3) Investigating model internals to advance LLM interpretability and AI safety. My recent work spans cultural alignment, event extraction, and mechanistic interpretability of LLMs.  
+
+My updated CV can be found [here](https://sijantanvir.github.io/cv.pdf).
