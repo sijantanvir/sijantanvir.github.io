@@ -48,7 +48,7 @@ local_business_type = ""
 org_name = "Jahangirnagar University"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Tanvir Ahmed Sijan is an MSc student in Computer Science at Jahangirnagar University researching computational linguistics, cultural alignment, and NLP."
+description = "Tanvir Ahmed Sijan is an MSc student in Computer Science at Jahangirnagar University whose research interests include Natural Language Processing, Human-AI Alignment and Mechanistic Interpretability of LLMs."
 
 ############################
 ## Site Features
@@ -62,7 +62,7 @@ highlight_languages = ["r"]  # Add support for highlighting additional languages
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
-math = true
+math = false
 
 # Enable diagram rendering? true/false
 #   If false, you can enable diagrams on a per page basis as needed.
@@ -286,8 +286,8 @@ plugins_js  = []
 ## Content Management System
 ############################
 [cms]
-  # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
-  netlify_cms = true
+  # Keep the admin route in `static/admin/`, but avoid injecting Netlify Identity on public pages.
+  netlify_cms = false
   branch = "master"
 
 ############################

@@ -62,4 +62,4 @@ Hi! 👋🏻 I'm Tanvir Ahmed Sijan, currently pursuing an M.Sc. in Computer Sci
 
 My research interests lie broadly in Computational Linguistics and Natural Language Processing particularly in (1) Human-AI alignment, (2) Developing robust evaluation frameworks for LLMs and (3) Investigating model internals to advance LLM interpretability and AI safety. My recent work spans cultural alignment, event extraction, and mechanistic interpretability of LLMs.  
 
-My updated CV can be found [here](https://sijantanvir.github.io/cv.pdf).
+My updated CV is available [here](https://sijantanvir.github.io/cv.pdf).
