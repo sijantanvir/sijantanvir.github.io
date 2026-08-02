@@ -1,24 +1,13 @@
 <meta name="google-site-verification" content="SIuaOpRUlj6uXaYUPysVz-M1RaGfTj3SRB9OJjbQxvM">
-<meta property="og:site_name" content="{{ site.Title }}">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": {{ site.Title | jsonify }},
-  "url": {{ site.BaseURL | jsonify }},
-  "description": {{ .Site.Params.description | default (printf "Personal academic website of %s." site.Title) | jsonify }},
-  "publisher": {
-    "@type": "Person",
-    "name": {{ site.Title | jsonify }}
-  }
-}
-</script>
+<meta name="application-name" content="{{ site.Title }}">
+<meta name="apple-mobile-web-app-title" content="{{ site.Title }}">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": {{ printf "%s#person" site.BaseURL | jsonify }},
   "name": {{ site.Title | jsonify }},
   "url": {{ site.BaseURL | jsonify }},
   "jobTitle": "Prospective PhD Applicant",
