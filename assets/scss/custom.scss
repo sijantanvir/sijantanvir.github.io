@@ -283,12 +283,12 @@
 }
 
 .wg-about #profile .network-icon .big-icon {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .wg-about #profile .network-icon .social-x-icon {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 1;
   font-family: var(--font-heading);
@@ -785,6 +785,7 @@ html.dark .contact-icon:hover {
 }
 
 #bio.home-section {
+  padding-top: 1.75rem;
   padding-bottom: 0.5rem;
 }
 
@@ -986,15 +987,18 @@ body.dark #experience a,
 
 #publications.home-publications-cards .pub-list-item-card {
   position: relative;
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.75rem !important;
   padding: 2.75rem 1.1rem 1rem 1.1rem;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 14px;
+  border-radius: 8px;
   background: #fff;
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
 }
 
 #publications.home-publications-cards .pub-list-item-card .pub-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
   min-width: 0;
 }
 
@@ -1003,18 +1007,38 @@ body.dark #experience a,
   flex: 1 1 auto;
 }
 
+#publications.home-publications-cards .pub-list-item-card .pub-card-thumb {
+  flex: 0 0 220px;
+  width: 220px;
+  margin-top: 0.2rem;
+}
+
+#container-publications .pub-card-thumb {
+  display: none;
+}
+
+#publications.home-publications-cards .pub-list-item-card .pub-card-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fff;
+}
+
 #publications.home-publications-cards .pub-card-venue,
 #publications.home-publications-cards .pub-card-venue em {
   position: absolute;
-  top: 0.7rem;
+  top: 0.64rem;
   left: 1rem;
   display: inline-block;
   margin: 0;
-  padding: 0.26rem 0.62rem;
-  border-radius: 999px;
+  padding: 0.24rem 0.57rem;
+  border-radius: 8px;
   background-color: #1565c0;
   color: #fff !important;
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
@@ -1033,7 +1057,7 @@ body.dark #experience a,
 
 #publications.home-publications-cards .pub-list-item-card .pub-card-title {
   margin-bottom: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 600;
   line-height: 1.45;
 }
@@ -1050,14 +1074,14 @@ body.dark #experience a,
 
 #publications.home-publications-cards .pub-list-item-card .pub-card-authors {
   margin-bottom: 0.22rem;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
 }
 
 #publications.home-publications-cards .pub-list-item-card .pub-card-meta,
 #publications.home-publications-cards .pub-list-item-card .pub-card-meta em {
   margin-bottom: 0.12rem;
   color: #475569;
-  font-size: 0.9rem;
+  font-size: 0.84rem;
 }
 
 #publications.home-publications-cards .pub-list-item-card .pub-card-meta {
@@ -1076,7 +1100,7 @@ body.dark #experience a,
   display: -webkit-box;
   margin-top: 0.55rem;
   color: #4b5563;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   line-height: 1.55;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -1113,13 +1137,13 @@ body.dark #experience a,
 
 #publications.home-publications-cards .pub-list-item-card .article-tags .tag-best-paper {
   position: absolute;
-  top: 0.7rem;
+  top: 0.64rem;
   right: 1rem;
-  padding: 0.26rem 0.62rem;
-  border-radius: 999px;
+  padding: 0.24rem 0.57rem;
+  border-radius: 8px;
   box-shadow: 0 0.125rem 0.3rem rgba(0, 0, 0, 0.08);
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   line-height: 1.2;
   white-space: nowrap;
   letter-spacing: 0.01em;
@@ -1163,6 +1187,24 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-me
 .dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta,
 .dark #publications.home-publications-cards .pub-list-item-card .pub-card-meta em {
   color: rgba(255, 255, 255, 0.72);
+}
+
+html.dark #publications.home-publications-cards .pub-list-item-card .pub-card-thumb img,
+body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-thumb img,
+.dark #publications.home-publications-cards .pub-list-item-card .pub-card-thumb img {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: #fff;
+}
+
+@media (max-width: 767.98px) {
+  #publications.home-publications-cards .pub-list-item-card .pub-card-content {
+    flex-direction: column;
+  }
+
+  #publications.home-publications-cards .pub-list-item-card .pub-card-thumb {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 575.98px) {
