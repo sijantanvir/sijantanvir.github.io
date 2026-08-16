@@ -1199,6 +1199,7 @@ body.dark #publications.home-publications-cards .pub-list-item-card .pub-card-th
 @media (max-width: 767.98px) {
   #publications.home-publications-cards .pub-list-item-card .pub-card-content {
     flex-direction: column;
+    gap: 0.5rem;
   }
 
   #publications.home-publications-cards .pub-list-item-card .pub-card-thumb {
