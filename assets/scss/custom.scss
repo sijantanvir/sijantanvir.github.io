@@ -298,10 +298,9 @@
 
 .wg-about #profile .network-icon .social-x-icon {
   display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 1;
-  font-family: var(--font-heading);
+  width: 1.8rem;
+  height: 1.8rem;
+  vertical-align: middle;
 }
 
 @media (max-width: 575.98px) {

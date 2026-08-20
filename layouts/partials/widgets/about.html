@@ -23,11 +23,10 @@
     <div id="profile">
 
       {{ if site.Params.avatar.gravatar }}
-      <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=540" srcset="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=540 1x, https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=810 1.5x" alt="{{$person_page.Title}}">
+      <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
       {{ else if $avatar }}
-      {{ $avatar_image := $avatar.Fill "540x540 Center" }}
-      {{ $avatar_image_large := $avatar.Fill "810x810 Center" }}
-      <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="{{ $avatar_image.RelPermalink }}" srcset="{{ $avatar_image.RelPermalink }} 1x, {{ $avatar_image_large.RelPermalink }} 1.5x" alt="{{$person_page.Title}}">
+      {{ $avatar_image := $avatar.Fill "270x270 Center" }}
+      <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
       {{ end }}
 
       <div class="portrait-title">
@@ -60,8 +59,8 @@
         {{ end }}
         <li>
           <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
-            {{ if and (eq $pack "fab") (eq .icon "twitter") }}
-            <span class="big-icon social-x-icon" aria-hidden="true">X</span>
+            {{ if eq .icon "twitter" }}
+            <svg class="social-x-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
             {{ else }}
             <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
             {{ end }}
