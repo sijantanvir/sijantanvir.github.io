@@ -1,3 +1,13 @@
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('wcTheme') === null) {
+        localStorage.setItem('wcTheme', '0');
+      }
+    } catch (e) {}
+  })();
+</script>
+
 <meta name="google-site-verification" content="SIuaOpRUlj6uXaYUPysVz-M1RaGfTj3SRB9OJjbQxvM">
 <meta name="application-name" content="{{ site.Title }}">
 <meta name="apple-mobile-web-app-title" content="{{ site.Title }}">
