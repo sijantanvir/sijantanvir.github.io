@@ -11,7 +11,7 @@ subtitle = "*Latest Checkpoints*"
 +++
 
 - 📆 [**August 2026**]
-  - Our paper on **event detection from noisy text** has been accepted at [W-NUT @ EMNLP 2026](https://noisy-text.github.io/)
+  - 🎉 Our paper on **event detection from noisy text** has been accepted at [W-NUT @ EMNLP 2026](https://noisy-text.github.io/)
   
 - 📆 [**July 2026**]	
   - 📢 Our mechanistic interpretabilty paper on **cross-format arithmetic neurons** is now available on [arXiv]( [https://arxiv.org/abs/2607.16693](https://arxiv.org/abs/2607.16693)); currently under review
