@@ -14,7 +14,7 @@ subtitle = "*Latest Checkpoints*"
   - 🎉 Our paper on **event detection from noisy text** has been accepted at [W-NUT @ EMNLP 2026](https://noisy-text.github.io/)
   
 - 📆 [**July 2026**]	
-  - 📢 Our mechanistic interpretabilty paper on **cross-format arithmetic neurons** is now available on [arXiv]( [https://arxiv.org/abs/2607.16693](https://arxiv.org/abs/2607.16693)); currently under review
+  - 📢 Our mechanistic interpretabilty paper on **cross-format arithmetic neurons** is now available on [arXiv](https://arxiv.org/abs/2607.16693); currently under review
   - 🏆 BanglaSocialBench has received **Best Paper Award** at **ACL SRW 2026**!
   - 📢 Our paper on **evaluating event detection in noisy text** is now available on [arXiv](https://arxiv.org/abs/2606.30914); currently under review
 
