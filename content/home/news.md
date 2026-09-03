@@ -10,10 +10,9 @@ subtitle = "*Latest Checkpoints*"
 
 +++
 
-- 📆 [**September 2026**]
-  - 🎉 Our mechanistic interpretabilty paper on **cross-format arithmetic neurons** has been accepted at [BlackboxNLP @ EMNLP 2026](https://blackboxnlp.github.io/2026/) which had  [unprecedented](https://x.com/BlackboxNLP/status/2094392100246757423) amount of submissions this year!
+- 📆 [**August 2026** - **September 2026**]
+  - 🎉 Our mechanistic interpretabilty paper on **cross-format arithmetic neurons** has been accepted at [BlackboxNLP @ EMNLP 2026](https://blackboxnlp.github.io/2026/) which received [unprecedented](https://x.com/BlackboxNLP/status/2094392100246757423) amount of submissions this year!
   
-- 📆 [**August 2026**]
   - 🎉 Our paper on **event detection from noisy text** has been accepted at [W-NUT @ EMNLP 2026](https://noisy-text.github.io/2026/)
   
 - 📆 [**July 2026**]	
