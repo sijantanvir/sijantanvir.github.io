@@ -45,7 +45,7 @@ social:
     link: https://x.com/TanvirSijan
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?hl=en&user=DAlfcbkAAAAJ
+    link: https://scholar.google.com/citations?hl=en&user=DAlfcbkAAAAJ&sortby=pubdate
   # - icon: researchgate
   #   icon_pack: ai
   #   link: https://www.researchgate.net/profile/Remi_Theriault

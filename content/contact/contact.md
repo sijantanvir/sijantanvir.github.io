@@ -26,7 +26,7 @@ design:
   <a class="contact-icon" href="mailto:sijantanv@gmail.com" aria-label="Email">
     <i class="fas fa-envelope" aria-hidden="true"></i>
   </a>
-  <a class="contact-icon" href="https://scholar.google.com/citations?user=DAlfcbkAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+  <a class="contact-icon" href=https://scholar.google.com/citations?hl=en&user=DAlfcbkAAAAJ&sortby=pubdate" target="_blank" rel="noopener" aria-label="Google Scholar">
     <i class="ai ai-google-scholar" aria-hidden="true"></i>
   </a>
   <a class="contact-icon" href="https://github.com/sijantanvir" target="_blank" rel="noopener" aria-label="GitHub">
