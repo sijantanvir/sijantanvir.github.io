@@ -4,7 +4,7 @@ title: "Assessing the Visual and Built Environment Risk on Pedestrian-Vehicle Cr
 # Publication name and optional abbreviated publication name.
 publication: ""
 publication_short: "Accepted at the 106th Transportation Research Board (TRB) Annual Meeting, Washington, D.C., 2027." # This appears in citation styled cards
-venue: "Preprint"
+venue: "TRB 2027"
 
 authors:
 - Tanvir Ahmed Sijan
@@ -13,7 +13,7 @@ authors:
 - Md. Shamsul Hoque
 
 publication_types:
-- "3"
+- "1"
 
 featured: false
 
