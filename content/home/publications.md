@@ -5,7 +5,7 @@ headless = true
 active = true
 weight = 31
 
-title = "[Publication](/publications/)"
+title = "[Peer-Reviewed Publications](/publications/)"
 subtitle = """*Selected Publications and Preprints*"""
 
 [content]
