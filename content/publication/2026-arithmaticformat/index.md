@@ -3,7 +3,7 @@ title: "Are Arithmetic Heuristic Neurons Form-Invariant? A Mechanistic Analysis 
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "Accepted at the 9th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP, co-located with EMNLP 2026" # This appears in citation styled cards
+publication_short: "*Proceedings of the 9th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP, co-located with EMNLP 2026*" # This appears in citation styled cards
 venue: "BlackboxNLP @ EMNLP 2026"
 
 authors:
@@ -16,20 +16,20 @@ equal_contributors:
 - 1
 
 publication_types:
-- "3"
+- "1"
 
 featured: false
 
-date: "2026-07-18T00:00:00Z"
+date: "2026-10-25T00:08:00"
 
 doi: ""
 doi_text: ""
 
-url_preprint: "https://arxiv.org/abs/2607.16693"
-url_preprint_text: "arXiv"
+url_preprint: ""
+url_preprint_text: ""
 external_link: "https://github.com/SharathHN/format-invariant-arithmetic"
 external_link_text: "Code"
-url_pdf: "https://arxiv.org/pdf/2607.16693"
+url_pdf: "https://aclanthology.org/2026.blackboxnlp-1.34/"
 url_pdf_text: "PDF"
 url_video: ""
 video_preview: false

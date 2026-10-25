@@ -3,7 +3,7 @@ title: "Beyond Clean Text: Evaluating Encoder and Decoder Robustness for Bangla 
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "*Accepted at the 11th Workshop on Natural User-generated Text (W-NUT), co-located with EMNLP 2026*" # This appears in citation styled cards
+publication_short: "*Proceedings of the 11th Workshop on Natural User-generated Text, co-located with EMNLP 2026*" # This appears in citation styled cards
 venue: "W-NUT @ EMNLP 2026"
 
 authors:
@@ -13,20 +13,20 @@ authors:
 - Md. Musfique Anwar
 
 publication_types:
-- "3"
+- "1"
 
 featured: false
 
-date: "2026-06-29T00:00:00"
+date: "2026-10-25T00:01:00"
 
 doi: ""
 doi_text: ""
 
-url_preprint: "https://arxiv.org/abs/2606.30914"
-url_preprint_text: "arXiv"
+url_preprint: ""
+url_preprint_text: ""
 external_link: "https://github.com/sijantanvir/Bangla-Noisy-Event-Eval"
 external_link_text: "Code" # Code
-url_pdf: "https://arxiv.org/pdf/2606.30914.pdf"
+url_pdf: "https://aclanthology.org/2026.wnut-1.3/"
 url_pdf_text: "PDF" # PDF
 url_video: ""
 video_preview: false
