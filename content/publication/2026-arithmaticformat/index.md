@@ -3,7 +3,7 @@ title: "Are Arithmetic Heuristic Neurons Form-Invariant? A Mechanistic Analysis 
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "*Proceedings of the 9th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP, co-located with EMNLP 2026*" # This appears in citation styled cards
+publication_short: "*In Proceedings of the 9th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP, co-located with EMNLP 2026*" # This appears in citation styled cards
 venue: "BlackboxNLP @ EMNLP 2026"
 
 authors:

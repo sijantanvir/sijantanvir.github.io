@@ -13,8 +13,7 @@ highlight_name: true
 
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Computational Linguistics, Natural Language Processing, Human-AI Alignment. Mechanistic Interpretability 
-
+bio: My research interests lie at the intersection of NLP and AI safety, focusing on human-AI alignment through human-centered evaluation, alignment methods, and LLM interpretability to develop safer and more trustworthy language models.
 #education:
 #  courses:
 #    - course: M.Sc. in Computer Science

@@ -3,7 +3,7 @@ title: "Assessing the Visual and Built Environment Risk on Pedestrian-Vehicle Cr
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "Accepted at the 106th Transportation Research Board (TRB) Annual Meeting, Washington, D.C., 2027." # This appears in citation styled cards
+publication_short: "*Accepted at the 106th Transportation Research Board (TRB) Annual Meeting, Washington, D.C., 2027*" # This appears in citation styled cards
 venue: "TRB 2027"
 
 authors:
@@ -42,8 +42,8 @@ environments influence crash severity. This study develops a data-driven framewo
 that integrates visual and built-environment characteristics derived from publicly
 available geospatial data to predict pedestrian crash severity in resource-constrained
 settings.
-
-Methods: Police-reported pedestrian crash records from Dhaka, Bangladesh, were
+<br>
+**Methods**: Police-reported pedestrian crash records from Dhaka, Bangladesh, were
 integrated with Google Street View imagery, Overture Maps, OpenStreetMap, and
 Meta sociodemographic data. Built-environment variables and visual indicators derived
 through semantic segmentation were extracted. Four machine learning models were
@@ -58,14 +58,14 @@ Index, and the density of schools, hospitals, and bus stops were associated with
 fatality risk. SHAP-based clustering identified three distinct roadway environments,
 highlighting substantial spatial heterogeneity in the effects of visual and built-
 environment factors on crash severity.
-
-Novelty: This study presents an interpretable framework that combines computer
+<br>
+**Novelty**: This study presents an interpretable framework that combines computer
 vision-derived visual indicators with open geospatial datasets to assess pedestrian
 crash severity without requiring detailed roadway inventories. The framework
 demonstrates that publicly available data can generate scalable, context-sensitive
 safety insights for data-scarce transportation systems.
-
-Practical Applications: The proposed framework enables transportation agencies to
+<br>
+**Practical Applications**: The proposed framework enables transportation agencies to
 identify high-risk roadway environments and prioritize location-specific pedestrian
 safety interventions where conventional roadway inventory data are unavailable. The
 approach supports evidence-based infrastructure planning and resource allocation in

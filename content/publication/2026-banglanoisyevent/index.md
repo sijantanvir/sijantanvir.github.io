@@ -3,7 +3,7 @@ title: "Beyond Clean Text: Evaluating Encoder and Decoder Robustness for Bangla 
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: "*Proceedings of the 11th Workshop on Natural User-generated Text, co-located with EMNLP 2026*" # This appears in citation styled cards
+publication_short: "*In Proceedings of the 11th Workshop on Natural User-generated Text, co-located with EMNLP 2026*" # This appears in citation styled cards
 venue: "W-NUT @ EMNLP 2026"
 
 authors:
